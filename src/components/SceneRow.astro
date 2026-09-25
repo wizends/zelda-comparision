@@ -1,0 +1,37 @@
+---
+import { imgSrc, type Scene } from '../data/chapters';
+
+interface Props {
+  scene: Scene;
+}
+
+const { scene } = Astro.props;
+---
+
+<article class="row split" tabindex="0" data-id={scene.id} data-name={scene.name} aria-label={`Comparar ${scene.name}`}>
+  <div class="half half-l">
+    <figure class="shot shot-l reveal-l">
+      <div class="img-wrap">
+        <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'remake')} alt={`${scene.name} en el remake de Switch 2`} />
+      </div>
+      <figcaption>
+        <h4 class="shot-name">{scene.name}</h4>
+        <p>{scene.remake}</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="half half-r">
+    <figure class="shot shot-r reveal-r">
+      <div class="shadowbox">
+        <div class="img-wrap">
+          <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'n64')} alt={`${scene.name} en Nintendo 64`} />
+          <span class="crt"></span>
+        </div>
+      </div>
+      <figcaption>
+        <p class="shot-name-r">&gt; {scene.name.toUpperCase()}</p>
+        <div class="textbox">{scene.n64}</div>
+      </figcaption>
+    </figure>
+  </div>
+</article>

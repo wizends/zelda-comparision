@@ -1,0 +1,15 @@
+# build
+dist/
+.astro/
+
+# dependencias
+node_modules/
+
+# originales a resolución completa (no los usa la web)
+_originals/
+
+# entorno
+.env
+.env.*
+.vercel/
+.DS_Store

@@ -1,0 +1,28 @@
+---
+import { ROMAN, type Chapter } from '../data/chapters';
+import SceneRow from './SceneRow.astro';
+
+interface Props {
+  chapter: Chapter;
+  index: number;
+}
+
+const { chapter, index } = Astro.props;
+---
+
+<section class="chapter" id={chapter.id}>
+  <header class="ch-head split">
+    <div class="half half-l reveal-l">
+      <span class="ch-num">CAPÍTULO {ROMAN[index]}</span>
+      <h2 class="ch-title">{chapter.title}</h2>
+      <div class="ornament"><i></i></div>
+      <p class="ch-intro">{chapter.intro}</p>
+    </div>
+    <div class="half half-r reveal-r">
+      <span class="ch-level">MUNDO {index + 1}-1</span>
+      <h3 class="ch-retro">{chapter.retro}</h3>
+      <div class="textbox">{chapter.intro}</div>
+    </div>
+  </header>
+  {chapter.scenes.map((scene) => <SceneRow scene={scene} />)}
+</section>

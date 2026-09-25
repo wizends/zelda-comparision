@@ -1,0 +1,12 @@
+---
+import { CHAPTERS, ROMAN } from '../data/chapters';
+---
+
+<nav class="chapter-nav split" aria-label="Capítulos">
+  <ol class="half half-l cn-l">
+    {CHAPTERS.map((ch, i) => <li><a href={`#${ch.id}`}>{ROMAN[i]} · {ch.title}</a></li>)}
+  </ol>
+  <ol class="half half-r cn-r">
+    {CHAPTERS.map((ch, i) => <li><a href={`#${ch.id}`}>{i + 1}-1 {ch.retro}</a></li>)}
+  </ol>
+</nav>

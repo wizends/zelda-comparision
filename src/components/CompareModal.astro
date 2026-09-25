@@ -1,0 +1,22 @@
+<!-- Comparador deslizante a pantalla completa -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h2 id="modal-title"></h2>
+      <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+    </div>
+    <div class="cmp" id="cmp">
+      <img class="cmp-img cmp-n64" alt="" />
+      <img class="cmp-img cmp-remake" alt="" />
+      <span class="cmp-label cmp-label-l">SWITCH 2</span>
+      <span class="cmp-label cmp-label-r">N64</span>
+      <div class="cmp-handle"><span></span></div>
+      <input class="cmp-range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar" />
+    </div>
+    <div class="modal-foot">
+      <button class="modal-nav" data-dir="-1" type="button">◀ Anterior</button>
+      <span class="modal-count"></span>
+      <button class="modal-nav" data-dir="1" type="button">Siguiente ▶</button>
+    </div>
+  </div>
+</div>

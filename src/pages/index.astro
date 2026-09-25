@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/TopBar.astro';
+import Hero from '../components/Hero.astro';
+import ChapterNav from '../components/ChapterNav.astro';
+import ChapterSection from '../components/ChapterSection.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import CompareModal from '../components/CompareModal.astro';
+import { CHAPTERS } from '../data/chapters';
+---
+
+<Layout
+  title="Ocarina of Time · Remake vs N64"
+  description="Comparativa escena a escena de The Legend of Zelda: Ocarina of Time en Nintendo Switch 2 frente al original de Nintendo 64 (1998)."
+>
+  <TopBar />
+  <Hero />
+  <ChapterNav />
+  <main id="app">
+    {CHAPTERS.map((chapter, index) => <ChapterSection chapter={chapter} index={index} />)}
+  </main>
+  <SiteFooter />
+  <CompareModal />
+</Layout>

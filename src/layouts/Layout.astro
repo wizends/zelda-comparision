@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/img/hero-remake.webp" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@500;700&family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Fondos fijos de cada mitad (escritorio) -->
+    <div class="bg bg-remake" aria-hidden="true">
+      <div class="fairies"></div>
+    </div>
+    <div class="bg bg-n64" aria-hidden="true">
+      <svg class="lowpoly" preserveAspectRatio="none"></svg>
+      <div class="scanlines"></div>
+    </div>
+    <div class="seam" aria-hidden="true"><span class="seam-tri"></span></div>
+
+    <slot />
+
+    <script>
+      import '../scripts/main';
+    </script>
+  </body>
+</html>
