@@ -1,0 +1,29 @@
+---
+import { resolveVideos } from '../lib/youtube-search';
+
+// Vídeo de YouTube de cada sección, buscado al compilar (ver src/lib/youtube-search.ts)
+const videos = await resolveVideos();
+---
+
+<!-- Control de música: una mitad estilo remake, otra estilo N64 -->
+<div class="music" title="Activa la música: cada sección tiene su tema" data-videos={JSON.stringify(videos)}>
+  <button class="music-btn" type="button" aria-pressed="false" aria-label="Activar o desactivar la música">
+    <span class="m-l">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      Música
+    </span>
+    <span class="m-r"><span class="m-off">OFF</span><span class="m-on">ON</span></span>
+  </button>
+  <span class="music-now" aria-live="polite"></span>
+</div>
+
+<!-- Reproductor compacto de YouTube con la canción original de la sección.
+     YouTube exige que el vídeo sea visible (≥ 200×200 px) mientras suena: al minimizar, se pausa. -->
+<aside class="ost" hidden aria-label="Banda sonora original">
+  <header class="ost-head">
+    <strong class="ost-song"></strong>
+    <button class="ost-btn ost-play" type="button" aria-label="Pausar">❚❚</button>
+    <button class="ost-btn ost-min" type="button" aria-label="Minimizar y pausar" aria-expanded="true">▾</button>
+  </header>
+  <div class="ost-frame"><div class="ost-player"></div></div>
+</aside>

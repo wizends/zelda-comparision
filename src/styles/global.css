@@ -319,6 +319,74 @@ a { color: inherit; }
 .modal-nav:hover { background: var(--n-yellow); }
 .modal-count { font-family: var(--vt); font-size: 22px; color: #fff; }
 
+/* ---------- Control de música ---------- */
+.music {
+  position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 40;
+  display: flex; flex-direction: column-reverse; align-items: center; gap: 6px;
+  --mix: .5;
+}
+.music-btn {
+  display: flex; align-items: stretch; padding: 0; border: 0; cursor: pointer; background: none;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .6));
+}
+.music-btn:focus-visible { outline: 2px dashed var(--n-yellow); outline-offset: 4px; }
+.m-l, .m-r { display: flex; align-items: center; gap: 8px; height: 40px; }
+.m-l {
+  padding: 0 14px 0 16px; border-radius: 20px 0 0 20px;
+  font-family: var(--display); font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--r-gold-2); background: rgba(12, 9, 6, .92); border: 1px solid var(--r-gold); border-right: 0;
+}
+.m-r {
+  padding: 0 12px; font-family: var(--pixel); font-size: 10px; color: #000; background: var(--n-yellow);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+}
+.m-on, .playing .m-off { display: none; }
+.playing .m-on { display: inline; }
+.playing .m-r { background: #3fe060; }
+
+/* Ecualizador: barras suaves que laten mientras suena */
+.eq { display: flex; align-items: flex-end; gap: 2px; height: 14px; }
+.eq i { width: 3px; height: 4px; background: var(--r-gold); border-radius: 1px; }
+.playing .eq i { animation: eq .9s ease-in-out infinite alternate; }
+.playing .eq i:nth-child(2) { animation-delay: -.3s; }
+.playing .eq i:nth-child(3) { animation-delay: -.6s; }
+@keyframes eq { from { height: 3px; } to { height: 14px; } }
+
+/* Nombre del tema: mezcla de estilos según hacia qué lado está el ratón */
+.music-now {
+  font-family: var(--vt); font-size: 18px; color: #fff; min-height: 1em;
+  padding: 0 10px; border-radius: 8px; background: rgba(8, 8, 32, .7);
+  opacity: 0; transition: opacity .6s;
+  text-shadow: calc((var(--mix) - .5) * 6px) 0 0 rgba(255, 204, 0, .7);
+}
+.playing .music-now:not(:empty) { opacity: 1; }
+
+/* Reproductor compacto de la banda sonora original (YouTube).
+   YouTube exige que el vídeo sea visible y de al menos 200×200 px mientras suena;
+   minimizado solo queda la barra de título, y la música se pausa. */
+.ost {
+  position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 240px;
+  background: rgba(12, 9, 6, .94); border: 1px solid var(--r-gold);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .8), 4px 4px 0 rgba(0, 0, 0, .6);
+}
+.ost[hidden] { display: none; }
+.ost-head { display: flex; align-items: center; gap: 6px; padding: 6px 6px 6px 10px; }
+.ost-song {
+  flex: 1; min-width: 0; font-family: var(--display); font-weight: 500; font-size: 13px; letter-spacing: .05em;
+  color: var(--r-gold-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.ost-btn {
+  flex: none; width: 28px; height: 28px; display: grid; place-items: center; border: 0; cursor: pointer;
+  font-family: var(--pixel); font-size: 9px; color: #000; background: var(--n-yellow); box-shadow: 2px 2px 0 #000;
+}
+.ost-btn:hover { background: #fff; }
+.ost-btn:active { transform: translate(2px, 2px); box-shadow: none; }
+.ost-btn:focus-visible { outline: 2px dashed var(--n-yellow); outline-offset: 2px; }
+.ost-min { background: var(--r-gold); }
+.ost-frame { height: 200px; background: #000; border-top: 3px solid #000; }
+.ost-frame iframe, .ost-player { display: block; width: 100%; height: 100%; border: 0; }
+.ost.collapsed .ost-frame { display: none; }
+
 /* ---------- Móvil: se apilan remake y N64 ---------- */
 @media (max-width: 800px) {
   :root { --topbar: 56px; }
@@ -344,6 +412,7 @@ a { color: inherit; }
   .row { padding: 0; }
   .row .half { padding-top: 22px; padding-bottom: 22px; }
   .cn-l, .cn-r { justify-content: flex-start; }
+  .ost { right: 16px; bottom: 96px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

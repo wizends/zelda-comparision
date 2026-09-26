@@ -1,4 +1,5 @@
 import { imgSrc } from '../data/chapters';
+import { initMusic } from './music';
 
 type RGB = [number, number, number];
 
@@ -190,3 +191,4 @@ initReveal();
 initLowPoly();
 initFairies();
 initModal();
+initMusic();

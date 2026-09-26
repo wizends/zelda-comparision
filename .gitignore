@@ -11,5 +11,7 @@ _originals/
 # entorno
 .env
 .env.*
+!.env.example
 .vercel/
 .DS_Store
+
