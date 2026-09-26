@@ -1,0 +1,643 @@
+[
+  {
+    "id": "espada-kokiri",
+    "name": "la Espada Kokiri",
+    "aliases": [
+      "espada kokiri",
+      "kokiri sword"
+    ],
+    "where": "en un cofre escondido en el campo de entrenamiento del Bosque Kokiri: gatea por el agujero de la pared y esquiva la roca rodante",
+    "use": "La primera espada de Link niño. Es corta pero suficiente para el Árbol Deku."
+  },
+  {
+    "id": "escudo-deku",
+    "name": "el Escudo Deku",
+    "aliases": [
+      "escudo deku",
+      "deku shield"
+    ],
+    "where": "en la tienda del Bosque Kokiri por 40 rupias (y en el Bazar de la Ciudadela)",
+    "use": "Escudo de madera para Link niño. Se quema con el fuego, así que cuidado con los Keese de fuego."
+  },
+  {
+    "id": "escudo-hyliano",
+    "name": "el Escudo Hyliano",
+    "aliases": [
+      "escudo hyliano",
+      "escudo hylian",
+      "hylian shield"
+    ],
+    "where": "en el Bazar de la Ciudadela o en la tienda de Kakariko, y gratis en una tumba del cementerio de Kakariko",
+    "use": "Escudo de metal que no se quema. De niño te tapa casi entero; de adulto es el escudo estándar."
+  },
+  {
+    "id": "escudo-espejo",
+    "name": "el Escudo espejo",
+    "aliases": [
+      "escudo espejo",
+      "mirror shield"
+    ],
+    "where": "en el Templo del Espíritu, de adulto, en la mano de la gran estatua",
+    "use": "Refleja la luz del sol para activar interruptores y devuelve magia. Imprescindible contra Birova."
+  },
+  {
+    "id": "espada-maestra",
+    "name": "la Espada Maestra",
+    "aliases": [
+      "espada maestra",
+      "master sword",
+      "espada destructora del mal",
+      "la espada legendaria"
+    ],
+    "where": "en su pedestal, en la Cámara de la Espada del Templo del Tiempo, al abrir la Puerta del Tiempo",
+    "use": "La espada destructora del mal. Al sacarla, Link queda sellado siete años hasta ser adulto; al devolverla a su pedestal vuelve a ser niño. Es la llave para viajar en el tiempo."
+  },
+  {
+    "id": "espada-biggoron",
+    "name": "la Espada de Biggoron",
+    "aliases": [
+      "espada de biggoron",
+      "biggoron's sword",
+      "biggorons sword",
+      "espada biggoron"
+    ],
+    "where": "como recompensa final de la secuencia de intercambio de adulto, que empieza con el Huevo de bolsillo en Kakariko y termina con Biggoron en la cima de la Montaña de la Muerte",
+    "use": "Una espada a dos manos, la más poderosa del juego. No se puede usar con escudo."
+  },
+  {
+    "id": "espada-gigante",
+    "name": "la Espada gigante",
+    "aliases": [
+      "espada gigante",
+      "giant's knife",
+      "cuchillo gigante",
+      "espada de medigoron"
+    ],
+    "where": "en la tienda de Medigoron, en Ciudad Goron, por 200 rupias (de adulto)",
+    "use": "Una espada a dos manos muy fuerte pero frágil: se rompe tras varios golpes."
+  },
+  {
+    "id": "tirachinas",
+    "name": "el Tirachinas de las hadas",
+    "aliases": [
+      "tirachinas",
+      "tirachinas de las hadas",
+      "fairy slingshot",
+      "resortera"
+    ],
+    "where": "en el interior del Gran Árbol Deku",
+    "use": "Dispara semillas Deku. Sirve para golpear objetivos lejanos, Skulltulas doradas y el ojo de la Reina Gohma. Solo lo usa Link niño."
+  },
+  {
+    "id": "bolsa-bombas",
+    "name": "la Bolsa de bombas",
+    "aliases": [
+      "bolsa de bombas",
+      "bomb bag",
+      "bombas",
+      "bomba"
+    ],
+    "where": "en la Caverna de los Dodongos",
+    "use": "Permite llevar bombas para volar paredes agrietadas y rocas. Con ellas se derrota al Rey Dodongo."
+  },
+  {
+    "id": "bumeran",
+    "name": "el Bumerán",
+    "aliases": [
+      "bumeran",
+      "boomerang",
+      "búmeran"
+    ],
+    "where": "en la tripa de Jabu-Jabu",
+    "use": "Aturde enemigos, recoge objetos a distancia y corta los tentáculos de Barinade. Solo lo usa Link niño."
+  },
+  {
+    "id": "arco",
+    "name": "el Arco de las hadas",
+    "aliases": [
+      "arco",
+      "arco de las hadas",
+      "fairy bow",
+      "flechas",
+      "arco y flechas"
+    ],
+    "where": "en el Templo del Bosque",
+    "use": "Dispara flechas. Es clave contra Ganon Fantasma y, con magia, dispara Flechas de fuego, hielo y luz. Solo lo usa Link adulto."
+  },
+  {
+    "id": "gancho",
+    "name": "el Gancho",
+    "aliases": [
+      "gancho",
+      "hookshot",
+      "garra",
+      "zarpa"
+    ],
+    "where": "en el cementerio de Kakariko: gana la carrera al fantasma de Dampé bajo su tumba (de adulto)",
+    "use": "Una cadena extensible que te engancha a superficies de madera y a blancos. También aturde enemigos."
+  },
+  {
+    "id": "gancho-largo",
+    "name": "el Gancho largo",
+    "aliases": [
+      "gancho largo",
+      "longshot",
+      "zarpa larga"
+    ],
+    "where": "en el Templo del Agua, tras vencer a Link Oscuro",
+    "use": "La versión mejorada del Gancho, con el doble de alcance. Imprescindible contra Morpha."
+  },
+  {
+    "id": "martillo",
+    "name": "el Martillo Megatón",
+    "aliases": [
+      "martillo megaton",
+      "martillo",
+      "megaton hammer"
+    ],
+    "where": "en el Templo del Fuego",
+    "use": "Rompe rocas y estatuas, hunde bloques oxidados y golpea a Volvagia. Link adulto."
+  },
+  {
+    "id": "lente-verdad",
+    "name": "la Lente de la Verdad",
+    "aliases": [
+      "lente de la verdad",
+      "lens of truth",
+      "lente"
+    ],
+    "where": "en el fondo del pozo de Kakariko",
+    "use": "Gasta magia para mostrar paredes falsas, suelos invisibles y enemigos ocultos. Imprescindible en el Templo de las Sombras."
+  },
+  {
+    "id": "botas-hierro",
+    "name": "las Botas de hierro",
+    "aliases": [
+      "botas de hierro",
+      "iron boots"
+    ],
+    "where": "en la Caverna de hielo",
+    "use": "Te hunden bajo el agua y evitan que te arrastren las corrientes o el viento. Imprescindibles en el Templo del Agua."
+  },
+  {
+    "id": "botas-levitadoras",
+    "name": "las Botas levitadoras",
+    "aliases": [
+      "botas levitadoras",
+      "botas voladoras",
+      "hover boots",
+      "botas de levitacion"
+    ],
+    "where": "en el Templo de las Sombras",
+    "use": "Permiten caminar sobre el aire durante un instante para cruzar huecos. Se patina un poco con ellas."
+  },
+  {
+    "id": "tunica-goron",
+    "name": "la Túnica Goron",
+    "aliases": [
+      "tunica goron",
+      "tunica roja",
+      "goron tunic"
+    ],
+    "where": "la regala el hijo de Darunia (Link Goron) en Ciudad Goron, de adulto; también se vende en la tienda Goron",
+    "use": "Resiste el calor extremo del Cráter de la Montaña de la Muerte y del Templo del Fuego."
+  },
+  {
+    "id": "tunica-zora",
+    "name": "la Túnica Zora",
+    "aliases": [
+      "tunica zora",
+      "tunica azul",
+      "zora tunic"
+    ],
+    "where": "la regala el Rey Zora al descongelarlo con Fuego azul (de adulto); también se vende en la tienda Zora",
+    "use": "Permite respirar bajo el agua. Imprescindible en el Templo del Agua."
+  },
+  {
+    "id": "escama-plateada",
+    "name": "la Escama plateada",
+    "aliases": [
+      "escama plateada",
+      "silver scale",
+      "escama de plata"
+    ],
+    "where": "como premio del juego de buceo del Dominio Zora, de niño",
+    "use": "Permite bucear más profundo."
+  },
+  {
+    "id": "escama-dorada",
+    "name": "la Escama dorada",
+    "aliases": [
+      "escama dorada",
+      "golden scale",
+      "escama de oro"
+    ],
+    "where": "en el Estanque de pesca del Lago Hylia, al pescar un pez muy grande de adulto",
+    "use": "Permite bucear aún más profundo."
+  },
+  {
+    "id": "brazalete-goron",
+    "name": "el Brazalete Goron",
+    "aliases": [
+      "brazalete goron",
+      "goron's bracelet",
+      "brazalete"
+    ],
+    "where": "te lo da Darunia cuando le tocas la Canción de Saria y se pone a bailar",
+    "use": "Permite a Link niño arrancar Flores bomba para lanzarlas."
+  },
+  {
+    "id": "guantes-plata",
+    "name": "los Guantes de plata",
+    "aliases": [
+      "guantes de plata",
+      "silver gauntlets",
+      "guanteletes de plata"
+    ],
+    "where": "en el Templo del Espíritu, recorriéndolo de niño (los usarás de adulto)",
+    "use": "Permiten levantar bloques y rocas grandes."
+  },
+  {
+    "id": "guantes-dorados",
+    "name": "los Guantes dorados",
+    "aliases": [
+      "guantes dorados",
+      "golden gauntlets",
+      "guanteletes dorados"
+    ],
+    "where": "en el Castillo de Ganon, en la prueba de la luz",
+    "use": "Permiten levantar los pilares gigantes, como el que bloquea la fuente de la Gran Hada junto al castillo."
+  },
+  {
+    "id": "fuego-din",
+    "name": "el Fuego de Din",
+    "aliases": [
+      "fuego de din",
+      "din's fire",
+      "dins fire"
+    ],
+    "where": "te lo da la Gran Hada escondida tras una roca junto al Castillo de Hyrule (de niño, con la Nana de Zelda)",
+    "use": "Hechizo que crea un anillo de fuego alrededor de Link. Enciende antorchas lejanas, como las de la entrada del Templo de las Sombras."
+  },
+  {
+    "id": "viento-farore",
+    "name": "el Viento de Farore",
+    "aliases": [
+      "viento de farore",
+      "farore's wind",
+      "farores wind"
+    ],
+    "where": "te lo da la Gran Hada de la Fuente Zora (de niño)",
+    "use": "Hechizo que marca un punto dentro de una mazmorra para volver a él después."
+  },
+  {
+    "id": "amor-nayru",
+    "name": "el Amor de Nayru",
+    "aliases": [
+      "amor de nayru",
+      "nayru's love",
+      "nayrus love"
+    ],
+    "where": "te lo da la Gran Hada del Coloso del Desierto (de niño)",
+    "use": "Hechizo que crea una barrera de cristal que te hace invulnerable durante un tiempo."
+  },
+  {
+    "id": "flecha-fuego",
+    "name": "las Flechas de fuego",
+    "aliases": [
+      "flechas de fuego",
+      "flecha de fuego",
+      "fire arrow",
+      "fire arrows"
+    ],
+    "where": "en el Lago Hylia, de adulto: dispara una flecha al sol naciente desde la isla cuando el lago está lleno",
+    "use": "Encienden antorchas lejanas y derriten el hielo rojo."
+  },
+  {
+    "id": "flecha-hielo",
+    "name": "las Flechas de hielo",
+    "aliases": [
+      "flechas de hielo",
+      "flecha de hielo",
+      "ice arrow",
+      "ice arrows"
+    ],
+    "where": "en el Campo de entrenamiento Gerudo",
+    "use": "Congelan a los enemigos. Son opcionales."
+  },
+  {
+    "id": "flecha-luz",
+    "name": "las Flechas de luz",
+    "aliases": [
+      "flechas de luz",
+      "flecha de luz",
+      "light arrow",
+      "light arrows"
+    ],
+    "where": "te las da Zelda en el Templo del Tiempo cuando revela que es Sheik",
+    "use": "Las flechas sagradas capaces de dañar a Ganondorf y a Ganon."
+  },
+  {
+    "id": "ocarina-hadas",
+    "name": "la Ocarina de las hadas",
+    "aliases": [
+      "ocarina de las hadas",
+      "fairy ocarina",
+      "ocarina de saria"
+    ],
+    "where": "te la regala Saria en el puente del Bosque Kokiri cuando te marchas",
+    "use": "Tu primera ocarina: sirve para tocar todas las canciones hasta que consigues la Ocarina del Tiempo."
+  },
+  {
+    "id": "ocarina-tiempo",
+    "name": "la Ocarina del Tiempo",
+    "aliases": [
+      "ocarina del tiempo",
+      "ocarina de zelda",
+      "ocarina azul"
+    ],
+    "where": "Zelda te la lanza mientras huye con Impa del castillo; la recoges en el foso",
+    "use": "El tesoro de la familia real. Es la llave, junto a las tres piedras y la Canción del Tiempo, para abrir la Puerta del Tiempo."
+  },
+  {
+    "id": "piedras-espirituales",
+    "name": "las Piedras Espirituales",
+    "aliases": [
+      "piedras espirituales",
+      "piedra espiritual",
+      "spiritual stones",
+      "las tres piedras"
+    ],
+    "where": "la Esmeralda Kokiri (Árbol Deku), el Rubí Goron (Caverna de los Dodongos) y el Zafiro Zora (Jabu-Jabu)",
+    "use": "Las tres llaves que, junto a la Ocarina del Tiempo, abren la Puerta del Tiempo."
+  },
+  {
+    "id": "esmeralda-kokiri",
+    "name": "la Esmeralda Kokiri",
+    "aliases": [
+      "esmeralda kokiri",
+      "kokiri's emerald",
+      "piedra del bosque",
+      "piedra espiritual del bosque"
+    ],
+    "where": "te la da el Gran Árbol Deku tras vencer a la Reina Gohma",
+    "use": "La Piedra Espiritual del Bosque."
+  },
+  {
+    "id": "rubi-goron",
+    "name": "el Rubí Goron",
+    "aliases": [
+      "rubi goron",
+      "goron's ruby",
+      "piedra del fuego",
+      "piedra espiritual del fuego"
+    ],
+    "where": "te lo da Darunia tras vencer al Rey Dodongo",
+    "use": "La Piedra Espiritual del Fuego."
+  },
+  {
+    "id": "zafiro-zora",
+    "name": "el Zafiro Zora",
+    "aliases": [
+      "zafiro zora",
+      "zora's sapphire",
+      "piedra del agua",
+      "piedra espiritual del agua"
+    ],
+    "where": "te lo da la princesa Ruto tras vencer a Barinade (lo considera un anillo de compromiso)",
+    "use": "La Piedra Espiritual del Agua."
+  },
+  {
+    "id": "medallones",
+    "name": "los Medallones de los Sabios",
+    "aliases": [
+      "medallones",
+      "medallon",
+      "medallones de los sabios",
+      "medallions"
+    ],
+    "where": "uno por cada sabio: Luz (Rauru), Bosque (Saria), Fuego (Darunia), Agua (Ruto), Sombras (Impa) y Espíritu (Nabooru)",
+    "use": "Representan el poder de cada sabio despertado. Con los seis se crea el puente arcoíris hacia el Castillo de Ganon."
+  },
+  {
+    "id": "carta-zelda",
+    "name": "la Carta de Zelda",
+    "aliases": [
+      "carta de zelda",
+      "zelda's letter",
+      "carta de la princesa"
+    ],
+    "where": "te la da Zelda en el patio del castillo",
+    "use": "Sirve para que el guardia te deje subir a la Montaña de la Muerte y para empezar el intercambio de máscaras con el Vendedor de Máscaras."
+  },
+  {
+    "id": "huevo-extrano",
+    "name": "el Huevo extraño",
+    "aliases": [
+      "huevo extraño",
+      "weird egg",
+      "huevo raro"
+    ],
+    "where": "te lo da Malon frente al Castillo de Hyrule",
+    "use": "Eclosiona en un Cucco que sirve para despertar a Talon, dormido junto al castillo."
+  },
+  {
+    "id": "mascara-keaton",
+    "name": "la Máscara Keaton",
+    "aliases": [
+      "mascara keaton",
+      "keaton mask",
+      "mascara de zorro"
+    ],
+    "where": "en la Tienda de máscaras de la Ciudadela, que abre tras enseñar la Carta de Zelda al guardia de la puerta de la Montaña de la Muerte",
+    "use": "Primera máscara del intercambio: la compra el guardia de Kakariko por 15 rupias."
+  },
+  {
+    "id": "mascara-calavera",
+    "name": "la Máscara de calavera",
+    "aliases": [
+      "mascara de calavera",
+      "skull mask",
+      "mascara calavera"
+    ],
+    "where": "en la Tienda de máscaras; se vende al Skull Kid del Bosque Perdido",
+    "use": "Segunda máscara del intercambio."
+  },
+  {
+    "id": "mascara-espeluznante",
+    "name": "la Máscara espeluznante",
+    "aliases": [
+      "mascara espeluznante",
+      "spooky mask",
+      "mascara de miedo"
+    ],
+    "where": "en la Tienda de máscaras; se vende al niño del cementerio de Kakariko",
+    "use": "Tercera máscara del intercambio."
+  },
+  {
+    "id": "capucha-conejo",
+    "name": "la Capucha de conejo",
+    "aliases": [
+      "capucha de conejo",
+      "bunny hood",
+      "mascara de conejo",
+      "orejas de conejo"
+    ],
+    "where": "en la Tienda de máscaras; se vende al Hombre que corre del Campo de Hyrule",
+    "use": "Cuarta máscara del intercambio. Al vendérsela, el Hombre que corre paga todo el dinero que puedas llevar."
+  },
+  {
+    "id": "mascara-verdad",
+    "name": "la Máscara de la verdad",
+    "aliases": [
+      "mascara de la verdad",
+      "mask of truth",
+      "mascara verdad"
+    ],
+    "where": "te la da el Vendedor de Máscaras tras completar la venta de las cuatro primeras máscaras",
+    "use": "Permite leer la mente de los animales y entender a las piedras chismosas."
+  },
+  {
+    "id": "mascaras-prestadas",
+    "name": "las Máscaras Goron, Zora y Gerudo",
+    "aliases": [
+      "mascara goron",
+      "mascara zora",
+      "mascara gerudo",
+      "goron mask",
+      "zora mask",
+      "gerudo mask"
+    ],
+    "where": "se piden prestadas en la Tienda de máscaras después de conseguir la Máscara de la verdad",
+    "use": "Son decorativas: cambian cómo reaccionan algunos personajes."
+  },
+  {
+    "id": "intercambio-biggoron",
+    "name": "la secuencia de intercambio de Biggoron",
+    "aliases": [
+      "secuencia de intercambio",
+      "intercambio de biggoron",
+      "trading sequence",
+      "cadena de intercambio"
+    ],
+    "where": "de adulto: Huevo de bolsillo (Kakariko) → Cucco de bolsillo → Cojiro → Seta extraña → Poción extraña → Sierra del cazador furtivo → Espada Goron rota → Receta → Rana ocular → Colirio de primera → Resguardo → Espada de Biggoron",
+    "use": "Una larga cadena de intercambios por todo Hyrule cuya recompensa final es la Espada de Biggoron."
+  },
+  {
+    "id": "botella",
+    "name": "las Botellas",
+    "aliases": [
+      "botella",
+      "botellas",
+      "bottle",
+      "botella vacia"
+    ],
+    "where": "hay cuatro: la de la Dama de los Cuccos de Kakariko, la de Talon (minijuego de los Cuccos en el Rancho Lon Lon), la del Coleccionista de Poes (al venderle 10 Grandes Poes) y la de la carta de Ruto en el Lago Hylia",
+    "use": "Guardan hadas, pociones, leche, Fuego azul, bichos, peces o Poes."
+  },
+  {
+    "id": "pieza-corazon",
+    "name": "las Piezas de corazón",
+    "aliases": [
+      "pieza de corazon",
+      "piezas de corazon",
+      "piece of heart",
+      "cuarto de corazon"
+    ],
+    "where": "hay 36 repartidas por Hyrule: minijuegos, grutas, cofres escondidos y personajes",
+    "use": "Cada cuatro piezas forman un contenedor de corazón nuevo."
+  },
+  {
+    "id": "contenedor-corazon",
+    "name": "los Contenedores de corazón",
+    "aliases": [
+      "contenedor de corazon",
+      "contenedores de corazon",
+      "heart container"
+    ],
+    "where": "aparecen al derrotar a cada uno de los ocho jefes de mazmorra",
+    "use": "Suman un corazón entero a tu vida máxima."
+  },
+  {
+    "id": "skulltula-dorada",
+    "name": "las Skulltulas doradas",
+    "aliases": [
+      "skulltula dorada",
+      "skulltulas doradas",
+      "gold skulltula",
+      "gold skulltulas",
+      "fichas de skulltula",
+      "skulltulas"
+    ],
+    "where": "hay 100 escondidas por Hyrule, muchas solo de noche; su ficha se recoge al derrotarlas",
+    "use": "Al llevarlas a la Casa de las Skulltulas de Kakariko recibes premios: 10 → Cartera de adulto, 20 → Piedra de la agonía, 30 → Cartera gigante, 40 → Bombchus, 50 → Pieza de corazón y 100 → rupias infinitas."
+  },
+  {
+    "id": "piedra-agonia",
+    "name": "la Piedra de la agonía",
+    "aliases": [
+      "piedra de la agonia",
+      "stone of agony"
+    ],
+    "where": "en la Casa de las Skulltulas, al entregar 20 fichas de Skulltula dorada",
+    "use": "Hace vibrar el mando cuando hay una gruta secreta cerca."
+  },
+  {
+    "id": "habichuela",
+    "name": "las Habichuelas mágicas",
+    "aliases": [
+      "habichuela magica",
+      "habichuelas magicas",
+      "magic bean",
+      "frijoles magicos",
+      "judias magicas"
+    ],
+    "where": "las vende el vendedor de habichuelas junto al río Zora",
+    "use": "Plántalas de niño en las zonas de tierra blanda; de adulto crecen en plataformas voladoras que llevan a piezas de corazón y secretos."
+  },
+  {
+    "id": "leche-lon-lon",
+    "name": "la Leche Lon Lon",
+    "aliases": [
+      "leche lon lon",
+      "leche",
+      "lon lon milk"
+    ],
+    "where": "se compra en el Rancho Lon Lon o se consigue tocando la Canción de Epona a las vacas",
+    "use": "Recupera 5 corazones por trago; cada botella tiene dos tragos."
+  },
+  {
+    "id": "fuego-azul",
+    "name": "el Fuego azul",
+    "aliases": [
+      "fuego azul",
+      "blue fire"
+    ],
+    "where": "en la Caverna de hielo y en el Dominio Zora congelado, guardándolo en una botella",
+    "use": "Derrite el hielo rojo y descongela al Rey Zora."
+  },
+  {
+    "id": "rupias",
+    "name": "las Rupias",
+    "aliases": [
+      "rupia",
+      "rupias",
+      "rupee",
+      "dinero"
+    ],
+    "where": "en la hierba, arbustos, cofres y enemigos",
+    "use": "La moneda de Hyrule: verde 1, azul 5, roja 20, morada 50 y dorada 200. La cartera limita cuántas llevas: 99, 200 y 500."
+  },
+  {
+    "id": "magia",
+    "name": "la Magia",
+    "aliases": [
+      "magia",
+      "barra de magia",
+      "medidor de magia",
+      "magic meter"
+    ],
+    "where": "te la da la Gran Hada de la cima de la Montaña de la Muerte; la Gran Hada del cráter duplica el medidor",
+    "use": "Permite usar hechizos, el golpe giratorio cargado, la Lente de la Verdad y las flechas mágicas."
+  }
+]

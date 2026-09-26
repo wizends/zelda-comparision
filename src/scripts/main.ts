@@ -1,4 +1,6 @@
 import { imgSrc } from '../data/chapters';
+import { initMusic } from './music';
+import { initNavi } from './navi';
 
 type RGB = [number, number, number];
 
@@ -18,7 +20,7 @@ function initReveal() {
     },
     { threshold: 0.18 },
   );
-  document.querySelectorAll('.row, .ch-head').forEach((el) => io.observe(el));
+  document.querySelectorAll('.row, .ch-head, .tl-block').forEach((el) => io.observe(el));
 }
 
 // ---------- Fondo low-poly (triángulos de color plano) ----------
@@ -186,7 +188,29 @@ function initModal() {
   });
 }
 
+// ---------- Cronología: la cabecera pasa a ser solo del remake ----------
+// Se activa cuando el borde inferior de la cabecera toca el inicio de la sección
+// y se deshace al volver a subir por encima.
+function initFinale() {
+  const topbar = document.querySelector<HTMLElement>('.topbar');
+  const section = document.getElementById('cronologia');
+  if (!topbar || !section) return;
+  const check = () => {
+    const reached = section.getBoundingClientRect().top <= topbar.getBoundingClientRect().bottom;
+    if (reached === topbar.classList.contains('finale')) return;
+    topbar.classList.toggle('finale', reached);
+    // La música (si está activa) acompaña el ensamblado de la Trifuerza con un arpegio
+    if (reached) window.dispatchEvent(new CustomEvent('oot:finale'));
+  };
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+}
+
 initReveal();
+initFinale();
 initLowPoly();
 initFairies();
 initModal();
+initMusic();
+initNavi();

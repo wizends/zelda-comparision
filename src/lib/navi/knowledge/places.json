@@ -1,0 +1,322 @@
+[
+  {
+    "id": "hyrule",
+    "name": "Hyrule",
+    "aliases": [
+      "hyrule",
+      "reino de hyrule",
+      "kingdom of hyrule"
+    ],
+    "where": "el reino donde transcurre todo el juego",
+    "summary": "El reino creado por las Tres Diosas. En Ocarina of Time acaba de salir de una guerra civil y el Rey de Hyrule ha unificado a sus pueblos: hylianos, Kokiri, Goron, Zora, Sheikah y Gerudo."
+  },
+  {
+    "id": "bosque-kokiri",
+    "name": "el Bosque Kokiri",
+    "aliases": [
+      "bosque kokiri",
+      "kokiri forest",
+      "aldea kokiri",
+      "pueblo kokiri"
+    ],
+    "where": "en el sureste de Hyrule",
+    "summary": "El hogar de los Kokiri, niños que nunca crecen y que viven con un hada cada uno. Aquí empieza la aventura: la casa de Link, la tienda Kokiri, el campo de entrenamiento con la Espada Kokiri y el camino al Árbol Deku."
+  },
+  {
+    "id": "bosque-perdido",
+    "name": "el Bosque Perdido",
+    "aliases": [
+      "bosque perdido",
+      "lost woods",
+      "los bosques perdidos"
+    ],
+    "where": "sobre el Bosque Kokiri",
+    "summary": "Un laberinto de claros donde es fácil perderse; los adultos que entran se convierten en Stalfos y los niños en Skull Kids. Sigue la música de Saria para orientarte. Conecta con Ciudad Goron, el Río Zora y el Prado Sagrado."
+  },
+  {
+    "id": "prado-sagrado",
+    "name": "el Prado Sagrado",
+    "aliases": [
+      "prado sagrado",
+      "sacred forest meadow",
+      "pradera sagrada"
+    ],
+    "where": "al final del Bosque Perdido",
+    "summary": "Un claro protegido por un laberinto de setos y Moblins. Aquí Saria te enseña su canción y, de adulto, está la entrada al Templo del Bosque.",
+    "dungeon": "templo-bosque"
+  },
+  {
+    "id": "campo-hyrule",
+    "name": "el Campo de Hyrule",
+    "aliases": [
+      "campo de hyrule",
+      "hyrule field",
+      "la pradera de hyrule"
+    ],
+    "where": "en el centro del reino",
+    "summary": "La enorme pradera que conecta todas las zonas. De noche salen Stalchilds del suelo. Con Epona se recorre en un momento."
+  },
+  {
+    "id": "rancho-lon-lon",
+    "name": "el Rancho Lon Lon",
+    "aliases": [
+      "rancho lon lon",
+      "lon lon ranch",
+      "rancho"
+    ],
+    "where": "en el centro del Campo de Hyrule",
+    "summary": "La granja de Talon y Malon, famosa por su leche. Aquí aprendes la Canción de Epona y, de adulto, ganas a Epona en una carrera contra Ingo."
+  },
+  {
+    "id": "ciudadela",
+    "name": "la Ciudadela del Castillo",
+    "aliases": [
+      "ciudadela",
+      "mercado",
+      "ciudadela de hyrule",
+      "castle town",
+      "market",
+      "pueblo del castillo"
+    ],
+    "where": "al norte del Campo de Hyrule, frente al castillo",
+    "summary": "El animado mercado de Hyrule: bazar, tienda de pociones, galería de tiro, bolera de Bombchus, juego del cofre del tesoro y la Tienda de máscaras. De adulto está en ruinas y lleno de ReDeads."
+  },
+  {
+    "id": "castillo-hyrule",
+    "name": "el Castillo de Hyrule",
+    "aliases": [
+      "castillo de hyrule",
+      "hyrule castle",
+      "castillo"
+    ],
+    "where": "al norte de la Ciudadela",
+    "summary": "Hogar de la familia real. Link se cuela esquivando guardias para conocer a Zelda en el patio. De adulto, en su lugar se alza el Castillo de Ganon."
+  },
+  {
+    "id": "templo-tiempo",
+    "name": "el Templo del Tiempo",
+    "aliases": [
+      "templo del tiempo",
+      "temple of time",
+      "puerta del tiempo",
+      "door of time"
+    ],
+    "where": "en el extremo noreste de la Ciudadela",
+    "summary": "El templo construido por los sabios para proteger la entrada al Reino Sagrado. Tras la Puerta del Tiempo descansa la Espada Maestra; aquí Link viaja entre sus dos épocas."
+  },
+  {
+    "id": "reino-sagrado",
+    "name": "el Reino Sagrado",
+    "aliases": [
+      "reino sagrado",
+      "sacred realm",
+      "cámara de los sabios",
+      "camara de los sabios"
+    ],
+    "where": "más allá de la Puerta del Tiempo",
+    "summary": "El lugar donde reposa la Trifuerza. Ganondorf entra en él siguiendo a Link y lo convierte en un reino oscuro. En la Cámara de los Sabios Link recibe los medallones."
+  },
+  {
+    "id": "kakariko",
+    "name": "la Aldea Kakariko",
+    "aliases": [
+      "kakariko",
+      "aldea kakariko",
+      "kakariko village",
+      "pueblo kakariko"
+    ],
+    "where": "al este del Campo de Hyrule, a los pies de la Montaña de la Muerte",
+    "summary": "Una aldea fundada por Impa para los Sheikah y abierta a todos. Tiene el molino, el pozo, la Casa de las Skulltulas, la Dama de los Cuccos y el cementerio.",
+    "dungeon": "fondo-pozo"
+  },
+  {
+    "id": "cementerio",
+    "name": "el Cementerio de Kakariko",
+    "aliases": [
+      "cementerio",
+      "cementerio de kakariko",
+      "graveyard"
+    ],
+    "where": "al este de la Aldea Kakariko",
+    "summary": "Aquí está la tumba de la familia real (Canción del Sol), el juego de cavar de Dampé, la carrera de su fantasma (Gancho) y, de adulto, la entrada al Templo de las Sombras.",
+    "dungeon": "templo-sombras"
+  },
+  {
+    "id": "montana-muerte",
+    "name": "la Montaña de la Muerte",
+    "aliases": [
+      "montana de la muerte",
+      "death mountain",
+      "sendero de la montana de la muerte",
+      "volcan"
+    ],
+    "where": "al norte de Kakariko",
+    "summary": "El volcán de los Goron. Su sendero lleva a la Caverna de los Dodongos, a Ciudad Goron y a la cima, donde vive Biggoron y hay una Gran Hada. El anillo de humo de la cima indica si el volcán está tranquilo.",
+    "dungeon": "caverna-dodongos"
+  },
+  {
+    "id": "crater",
+    "name": "el Cráter de la Montaña de la Muerte",
+    "aliases": [
+      "crater",
+      "cráter",
+      "crater de la montana de la muerte",
+      "death mountain crater"
+    ],
+    "where": "dentro del volcán, accesible desde Ciudad Goron",
+    "summary": "Un mar de lava donde está el Templo del Fuego. De adulto el calor es mortal sin la Túnica Goron.",
+    "dungeon": "templo-fuego"
+  },
+  {
+    "id": "ciudad-goron",
+    "name": "Ciudad Goron",
+    "aliases": [
+      "ciudad goron",
+      "goron city",
+      "pueblo goron"
+    ],
+    "where": "excavada dentro de la Montaña de la Muerte",
+    "summary": "La ciudad de los Goron, en varios pisos alrededor de una gran vasija que gira. De niño los Goron pasan hambre porque la Caverna de los Dodongos está bloqueada."
+  },
+  {
+    "id": "rio-zora",
+    "name": "el Río Zora",
+    "aliases": [
+      "rio zora",
+      "zora's river",
+      "rio de los zora"
+    ],
+    "where": "al este del Campo de Hyrule",
+    "summary": "Un río lleno de Octoroks que sube hasta el Dominio Zora. Aquí se compran las habichuelas mágicas y hay ranas que cantan."
+  },
+  {
+    "id": "dominio-zora",
+    "name": "el Dominio Zora",
+    "aliases": [
+      "dominio zora",
+      "zora's domain",
+      "reino zora"
+    ],
+    "where": "al final del Río Zora, tras una cascada que se abre con la Nana de Zelda",
+    "summary": "El hogar de los Zora, una gran caverna de agua con el trono del Rey Zora. De adulto está completamente congelado."
+  },
+  {
+    "id": "fuente-zora",
+    "name": "la Fuente Zora",
+    "aliases": [
+      "fuente zora",
+      "zora's fountain",
+      "manantial zora"
+    ],
+    "where": "detrás del trono del Rey Zora",
+    "summary": "El manantial donde descansa Lord Jabu-Jabu. De adulto está helado y alberga la Caverna de hielo.",
+    "dungeon": "caverna-hielo"
+  },
+  {
+    "id": "lago-hylia",
+    "name": "el Lago Hylia",
+    "aliases": [
+      "lago hylia",
+      "lake hylia",
+      "el lago"
+    ],
+    "where": "al sur del Campo de Hyrule",
+    "summary": "Un gran lago con el Laboratorio del lago y el Estanque de pesca. De adulto está seco por culpa de Morpha, y el Templo del Agua está en su fondo.",
+    "dungeon": "templo-agua"
+  },
+  {
+    "id": "estanque-pesca",
+    "name": "el Estanque de pesca",
+    "aliases": [
+      "estanque de pesca",
+      "fishing pond",
+      "fishing hole",
+      "pesca"
+    ],
+    "where": "junto al Lago Hylia",
+    "summary": "Un minijuego de pesca muy querido. Pescar un pez grande da una Pieza de corazón de niño y la Escama dorada de adulto. El pez más buscado es la Loach de Hylia."
+  },
+  {
+    "id": "valle-gerudo",
+    "name": "el Valle Gerudo",
+    "aliases": [
+      "valle gerudo",
+      "gerudo valley",
+      "cañon gerudo"
+    ],
+    "where": "al oeste del Campo de Hyrule",
+    "summary": "Un cañón con un puente roto sobre el río. De adulto lo cruzas con Epona o con el Gancho y los carpinteros lo reparan al rescatarlos."
+  },
+  {
+    "id": "fortaleza-gerudo",
+    "name": "la Fortaleza Gerudo",
+    "aliases": [
+      "fortaleza gerudo",
+      "gerudo's fortress",
+      "gerudo fortress",
+      "guarida de los ladrones"
+    ],
+    "where": "al final del Valle Gerudo",
+    "summary": "La base de las ladronas Gerudo. De adulto hay que infiltrarse con sigilo para rescatar a los cuatro carpinteros encerrados. Alberga el Campo de entrenamiento Gerudo.",
+    "dungeon": "campo-entrenamiento-gerudo"
+  },
+  {
+    "id": "desierto-encantado",
+    "name": "el Desierto Encantado",
+    "aliases": [
+      "desierto encantado",
+      "haunted wasteland",
+      "desierto",
+      "desierto embrujado"
+    ],
+    "where": "más allá de la Fortaleza Gerudo",
+    "summary": "Un desierto con tormentas de arena y arenas movedizas. Hay que seguir las banderas y, después, al fantasma guía usando la Lente de la Verdad."
+  },
+  {
+    "id": "coloso",
+    "name": "el Coloso del Desierto",
+    "aliases": [
+      "coloso del desierto",
+      "desert colossus",
+      "coloso",
+      "diosa de la arena"
+    ],
+    "where": "al final del Desierto Encantado",
+    "summary": "Una enorme estatua de la diosa de la arena tallada en la roca, que alberga el Templo del Espíritu y la fuente de la Gran Hada del Amor de Nayru.",
+    "dungeon": "templo-espiritu"
+  },
+  {
+    "id": "castillo-ganon-lugar",
+    "name": "las ruinas del Castillo de Hyrule",
+    "aliases": [
+      "ruinas del castillo",
+      "castillo en ruinas"
+    ],
+    "where": "donde estaba el Castillo de Hyrule, de adulto",
+    "summary": "De adulto el castillo ha sido sustituido por el Castillo de Ganon, flotando sobre un foso de lava.",
+    "dungeon": "castillo-ganon"
+  },
+  {
+    "id": "casa-skulltula",
+    "name": "la Casa de las Skulltulas",
+    "aliases": [
+      "casa de las skulltulas",
+      "house of skulltula",
+      "familia maldita",
+      "familia rica maldita"
+    ],
+    "where": "en la Aldea Kakariko",
+    "summary": "Una familia rica maldita convertida en Skulltulas por su avaricia. Cada 10 fichas de Skulltula dorada que traes, uno se cura y te da un premio."
+  },
+  {
+    "id": "molino",
+    "name": "el Molino de Kakariko",
+    "aliases": [
+      "molino",
+      "molino de kakariko",
+      "windmill"
+    ],
+    "where": "en la Aldea Kakariko",
+    "summary": "El molino donde el hombre del fonógrafo toca sin parar. Aquí se aprende la Canción de la tormenta y se esconde una Pieza de corazón."
+  }
+]

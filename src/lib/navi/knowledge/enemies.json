@@ -1,0 +1,330 @@
+[
+  {
+    "id": "deku-baba",
+    "name": "Deku Baba",
+    "aliases": [
+      "deku baba",
+      "planta carnivora",
+      "deku babas"
+    ],
+    "where": "en el bosque y en las mazmorras",
+    "summary": "Plantas carnívoras que se levantan cuando te acercas.",
+    "strategy": "Golpéalas cuando estén erguidas. Si las aturdes y las cortas por el tallo, sueltan Palos Deku; las más grandes también Nueces Deku."
+  },
+  {
+    "id": "deku-scrub",
+    "name": "Deku Scrub",
+    "aliases": [
+      "deku scrub",
+      "matorral deku",
+      "deku",
+      "negociante deku",
+      "business scrub"
+    ],
+    "where": "en bosques, grutas y mazmorras",
+    "summary": "Pequeños seres que se esconden en flores y escupen nueces. Algunos son comerciantes y te venden objetos al capturarlos.",
+    "strategy": "Devuélveles la nuez con el escudo y luego atrápalos: te darán información o te venderán cosas."
+  },
+  {
+    "id": "skulltula",
+    "name": "Skulltula",
+    "aliases": [
+      "skulltula",
+      "arana",
+      "araña",
+      "big skulltula",
+      "skullwalltula"
+    ],
+    "where": "en el Árbol Deku, cuevas y paredes",
+    "summary": "Arañas con una calavera en el lomo que cuelgan del techo. Las Skullwalltulas trepan por las paredes y las doradas dan fichas.",
+    "strategy": "Su parte blanda es la tripa: espera a que se giren y golpéalas, o usa el Tirachinas, el Bumerán o el Gancho."
+  },
+  {
+    "id": "keese",
+    "name": "Keese",
+    "aliases": [
+      "keese",
+      "murcielago",
+      "murciélago",
+      "fire keese",
+      "ice keese",
+      "keese de fuego",
+      "keese de hielo"
+    ],
+    "where": "en cuevas y mazmorras",
+    "summary": "Murciélagos que se lanzan en picado. Los de fuego queman el Escudo Deku y los de hielo te congelan.",
+    "strategy": "Fija el objetivo con Z y golpéalos, o usa el Tirachinas o el Bumerán desde lejos."
+  },
+  {
+    "id": "octorok",
+    "name": "Octorok",
+    "aliases": [
+      "octorok",
+      "octoroks",
+      "pulpo"
+    ],
+    "where": "en el agua de los ríos y lagos",
+    "summary": "Pulpos que asoman del agua para escupir rocas.",
+    "strategy": "Pon el escudo delante: la roca rebotará y los derrotará."
+  },
+  {
+    "id": "stalfos",
+    "name": "Stalfos",
+    "aliases": [
+      "stalfos",
+      "esqueleto",
+      "esqueleto guerrero"
+    ],
+    "where": "en el Bosque Perdido, el Templo del Bosque y otras mazmorras",
+    "summary": "Esqueletos guerreros con espada y escudo que saltan hacia atrás para esquivar.",
+    "strategy": "Espera a que ataquen, cúbrete y contraataca. Los saltos laterales y los golpes tras un ataque fallido funcionan muy bien."
+  },
+  {
+    "id": "stalchild",
+    "name": "Stalchild",
+    "aliases": [
+      "stalchild",
+      "stalchilds",
+      "esqueleto pequeño"
+    ],
+    "where": "en el Campo de Hyrule de noche",
+    "summary": "Pequeños esqueletos que salen del suelo cuando se pone el sol.",
+    "strategy": "Un par de golpes los deshacen; cuantos más derrotas, más grandes salen. Desaparecen al amanecer."
+  },
+  {
+    "id": "redead",
+    "name": "ReDead",
+    "aliases": [
+      "redead",
+      "redeads",
+      "re dead",
+      "zombi",
+      "gibdo",
+      "gibdos"
+    ],
+    "where": "en la Ciudadela en ruinas, el fondo del pozo y el Templo de las Sombras",
+    "summary": "Momias que paralizan con un grito y se te suben encima. Los Gibdos son su versión vendada.",
+    "strategy": "Toca la Canción del Sol para paralizarlos y golpéalos. No te acerques de frente: si te agarran, pulsa botones rápido para soltarte."
+  },
+  {
+    "id": "like-like",
+    "name": "Like Like",
+    "aliases": [
+      "like like",
+      "likelike",
+      "come escudos"
+    ],
+    "where": "en mazmorras como el Templo del Espíritu y el Castillo de Ganon",
+    "summary": "Criaturas gelatinosas que te tragan y te roban el escudo o la túnica.",
+    "strategy": "Atácalos desde lejos con flechas o el Gancho. Si te roba algo, derrótalo pronto para recuperarlo."
+  },
+  {
+    "id": "wallmaster",
+    "name": "Wallmaster",
+    "aliases": [
+      "wallmaster",
+      "floormaster",
+      "mano del techo",
+      "mano gigante"
+    ],
+    "where": "en el Árbol Deku, el Templo del Bosque y el Templo de las Sombras",
+    "summary": "Manos gigantes que caen del techo (Wallmaster) o se arrastran por el suelo (Floormaster) y te devuelven a la entrada.",
+    "strategy": "Si ves una sombra que crece bajo tus pies, ¡apártate rápido! Luego golpea la mano."
+  },
+  {
+    "id": "lizalfos",
+    "name": "Lizalfos",
+    "aliases": [
+      "lizalfos",
+      "dinolfos",
+      "lagarto"
+    ],
+    "where": "en la Caverna de los Dodongos y el Templo del Fuego",
+    "summary": "Guerreros reptiles muy ágiles que atacan en pareja. Los Dinolfos son la versión más fuerte y escupen fuego.",
+    "strategy": "Cúbrete con el escudo y contraataca tras sus golpes; suelen turnarse, así que fija al que se acerca."
+  },
+  {
+    "id": "dodongo",
+    "name": "Dodongo",
+    "aliases": [
+      "dodongo",
+      "dodongos",
+      "baby dodongo"
+    ],
+    "where": "en la Caverna de los Dodongos",
+    "summary": "Reptiles que escupen fuego. Las crías explotan al morir.",
+    "strategy": "Golpéales la cola desde un lado. Aléjate de las crías al derrotarlas, porque explotan."
+  },
+  {
+    "id": "poe",
+    "name": "Poe",
+    "aliases": [
+      "poe",
+      "poes",
+      "fantasma",
+      "big poe",
+      "gran poe",
+      "poe sisters",
+      "hermanas poe"
+    ],
+    "where": "en cementerios, el Campo de Hyrule y el Templo del Bosque",
+    "summary": "Fantasmas con farol que se vuelven invisibles. Los Grandes Poes rondan el campo de adulto; las cuatro hermanas Poe custodian el Templo del Bosque.",
+    "strategy": "Fija el objetivo y golpéalos cuando sean visibles. A los Grandes Poes dispárales con el arco montado en Epona y guarda su alma en una botella para venderla."
+  },
+  {
+    "id": "tektite",
+    "name": "Tektite",
+    "aliases": [
+      "tektite",
+      "tektites",
+      "araña saltarina"
+    ],
+    "where": "en la Montaña de la Muerte y sobre el agua del Lago Hylia",
+    "summary": "Criaturas saltarinas de cuatro patas: las rojas en tierra y las azules sobre el agua o la lava.",
+    "strategy": "Golpéalas cuando aterricen; el Gancho y las flechas también funcionan."
+  },
+  {
+    "id": "leever",
+    "name": "Leever",
+    "aliases": [
+      "leever",
+      "leevers",
+      "gusano de arena"
+    ],
+    "where": "en el Desierto Encantado y el Campo de Hyrule",
+    "summary": "Criaturas que giran enterradas en la arena y salen a perseguirte.",
+    "strategy": "Muévete sin parar y golpéalos cuando asomen; no te quedes quieto en la arena."
+  },
+  {
+    "id": "peahat",
+    "name": "Peahat",
+    "aliases": [
+      "peahat",
+      "peahats",
+      "planta voladora"
+    ],
+    "where": "en el Campo de Hyrule",
+    "summary": "Plantas voladoras con hélices afiladas.",
+    "strategy": "De día atácalos por la raíz cuando se posan; de noche no aparecen. Sus larvas se derrotan con un golpe."
+  },
+  {
+    "id": "moblin",
+    "name": "Moblin",
+    "aliases": [
+      "moblin",
+      "moblins",
+      "club moblin"
+    ],
+    "where": "en el Prado Sagrado y el Bosque Perdido",
+    "summary": "Guardias grandes con lanza o garrote que custodian el Prado Sagrado.",
+    "strategy": "Evita su campo de visión o mantente en movimiento. El Moblin del garrote provoca ondas de choque: esquívalas y ataca por detrás."
+  },
+  {
+    "id": "beamos",
+    "name": "Beamos",
+    "aliases": [
+      "beamos",
+      "estatua laser",
+      "ojo laser"
+    ],
+    "where": "en varias mazmorras",
+    "summary": "Estatuas con un ojo que disparan un rayo láser al verte.",
+    "strategy": "Destruye su ojo con una bomba (o una flecha): cuando explote, se desmorona."
+  },
+  {
+    "id": "armos",
+    "name": "Armos",
+    "aliases": [
+      "armos",
+      "estatua viviente"
+    ],
+    "where": "en la Caverna de los Dodongos y el Templo del Espíritu",
+    "summary": "Estatuas que cobran vida y saltan hacia ti al tocarlas.",
+    "strategy": "Golpéalas por detrás; después de un rato explotan, así que aléjate."
+  },
+  {
+    "id": "freezard",
+    "name": "Freezard",
+    "aliases": [
+      "freezard",
+      "freezards",
+      "estatua de hielo"
+    ],
+    "where": "en la Caverna de hielo y el Castillo de Ganon",
+    "summary": "Estatuas de hielo que soplan un aliento congelante.",
+    "strategy": "Ataca desde un lado; el Martillo Megatón o el Fuego de Din las destruyen rápido."
+  },
+  {
+    "id": "wolfos",
+    "name": "Wolfos",
+    "aliases": [
+      "wolfos",
+      "lobo",
+      "lobos",
+      "white wolfos",
+      "wolfos blanco"
+    ],
+    "where": "en el Prado Sagrado, el Bosque Perdido y la Caverna de hielo",
+    "summary": "Lobos humanoides que se cubren de los golpes frontales.",
+    "strategy": "Golpéales en la espalda: rodea con saltos laterales o espera a que ataquen y contraataca."
+  },
+  {
+    "id": "gerudo",
+    "name": "las guardias Gerudo",
+    "aliases": [
+      "guardia gerudo",
+      "guardias gerudo",
+      "gerudo guard",
+      "guerreras gerudo"
+    ],
+    "where": "en la Fortaleza Gerudo",
+    "summary": "Guerreras que patrullan la fortaleza y te encierran si te ven.",
+    "strategy": "Muévete con sigilo. Si te ven, puedes aturdirlas con una flecha o el Gancho antes de que te atrapen."
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "aliases": [
+      "anubis"
+    ],
+    "where": "en el Templo del Espíritu",
+    "summary": "Espectros que imitan tus movimientos al revés.",
+    "strategy": "No les afecta la espada: usa el Fuego de Din o haz que se acerquen a una llama."
+  },
+  {
+    "id": "shell-blade",
+    "name": "Shell Blade",
+    "aliases": [
+      "shell blade",
+      "almeja",
+      "almeja de pinchos"
+    ],
+    "where": "en el Templo del Agua",
+    "summary": "Almejas con dientes que se abren para atacar.",
+    "strategy": "Espera a que se abran y golpea su interior, o usa el Gancho."
+  },
+  {
+    "id": "biri-bari",
+    "name": "Bari y Biri",
+    "aliases": [
+      "bari",
+      "biri",
+      "medusa",
+      "medusas"
+    ],
+    "where": "en la tripa de Jabu-Jabu",
+    "summary": "Medusas eléctricas: tocarlas con la espada te electrocuta.",
+    "strategy": "Usa el Bumerán o el Tirachinas desde lejos."
+  },
+  {
+    "id": "torch-slug",
+    "name": "Torch Slug",
+    "aliases": [
+      "torch slug",
+      "babosa de fuego"
+    ],
+    "where": "en la Caverna de los Dodongos y el Templo del Fuego",
+    "summary": "Babosas envueltas en llamas.",
+    "strategy": "Golpéalas cuando se apague su fuego."
+  }
+]

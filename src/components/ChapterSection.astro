@@ -10,7 +10,7 @@ interface Props {
 const { chapter, index } = Astro.props;
 ---
 
-<section class="chapter" id={chapter.id}>
+<section class="chapter" id={chapter.id} data-track={chapter.id}>
   <header class="ch-head split">
     <div class="half half-l reveal-l">
       <span class="ch-num">CAPÍTULO {ROMAN[index]}</span>

@@ -11,5 +11,13 @@ _originals/
 # entorno
 .env
 .env.*
+!.env.example
 .vercel/
 .DS_Store
+
+
+# modelo de Navi (se entrena en cada build)
+src/lib/navi/model.generated.json
+
+# datos crudos descargados de Zelda Wiki para redactar el conocimiento
+_wiki/

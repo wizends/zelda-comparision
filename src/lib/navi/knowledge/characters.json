@@ -1,0 +1,422 @@
+[
+  {
+    "id": "link",
+    "name": "Link",
+    "aliases": [
+      "link",
+      "heroe del tiempo",
+      "hero of time",
+      "el heroe",
+      "el chico sin hada"
+    ],
+    "where": "empieza en su casa del árbol del Bosque Kokiri",
+    "summary": "El protagonista. Creció entre los Kokiri creyéndose uno de ellos, pero es un hyliano: su madre lo dejó en el bosque de bebé huyendo de la guerra. Tras sacar la Espada Maestra se convierte en el Héroe del Tiempo."
+  },
+  {
+    "id": "navi",
+    "name": "Navi",
+    "aliases": [
+      "navi",
+      "hada navi",
+      "tu hada"
+    ],
+    "where": "siempre a tu lado",
+    "summary": "¡Esa soy yo! El hada que el Gran Árbol Deku envió para acompañar a Link. Te señalo enemigos y objetos con Z, te doy pistas y, sí, a veces digo «¡Hey! ¡Escucha!» un poquito de más."
+  },
+  {
+    "id": "zelda",
+    "name": "la princesa Zelda",
+    "aliases": [
+      "zelda",
+      "princesa zelda",
+      "princess zelda",
+      "la princesa"
+    ],
+    "where": "en el patio del Castillo de Hyrule (de niño); de adulto, disfrazada de Sheik",
+    "summary": "La princesa de Hyrule y portadora de la Trifuerza de la Sabiduría. Tuvo un sueño profético sobre Ganondorf y un chico del bosque, y pidió ayuda a Link. Durante siete años se ocultó como Sheik y es la séptima sabia."
+  },
+  {
+    "id": "ganondorf-personaje",
+    "name": "Ganondorf",
+    "aliases": [
+      "rey de las gerudo",
+      "hombre del desierto"
+    ],
+    "where": "en el Castillo de Hyrule y, de adulto, en su Castillo de Ganon",
+    "summary": "El rey de las Gerudo y el gran villano. Usa a Link para abrir la Puerta del Tiempo y roba la Trifuerza, que se divide: él se queda con el Poder."
+  },
+  {
+    "id": "impa",
+    "name": "Impa",
+    "aliases": [
+      "impa",
+      "niñera de zelda",
+      "la sheikah"
+    ],
+    "where": "en el patio del castillo junto a Zelda; más tarde en Kakariko",
+    "summary": "La guardiana Sheikah de Zelda. Te enseña la Nana de Zelda, fundó la Aldea Kakariko y es la Sabia de las Sombras."
+  },
+  {
+    "id": "sheik",
+    "name": "Sheik",
+    "aliases": [
+      "sheik",
+      "el sheikah misterioso",
+      "superviviente sheikah"
+    ],
+    "where": "aparece en cada templo de adulto",
+    "summary": "Un misterioso guerrero Sheikah que enseña a Link las canciones de teletransporte. En realidad es Zelda disfrazada."
+  },
+  {
+    "id": "saria",
+    "name": "Saria",
+    "aliases": [
+      "saria",
+      "amiga de link"
+    ],
+    "where": "en el Prado Sagrado, tocando la ocarina",
+    "summary": "La mejor amiga de Link en el Bosque Kokiri. Le regala la Ocarina de las hadas y le enseña su canción. Es la Sabia del Bosque."
+  },
+  {
+    "id": "mido",
+    "name": "Mido",
+    "aliases": [
+      "mido",
+      "jefe de los kokiri"
+    ],
+    "where": "en el Bosque Kokiri",
+    "summary": "El autoproclamado jefe de los Kokiri. No soporta a Link y le cierra el paso al Árbol Deku hasta que tiene espada y escudo."
+  },
+  {
+    "id": "arbol-deku-personaje",
+    "name": "el Gran Árbol Deku",
+    "aliases": [
+      "gran arbol deku",
+      "arbol deku",
+      "great deku tree",
+      "el guardian del bosque"
+    ],
+    "where": "en su pradera del Bosque Kokiri",
+    "summary": "El espíritu guardián del bosque y padre de los Kokiri. Maldito por Ganondorf, envía a Navi a buscar a Link, le cuenta la leyenda de la Trifuerza y muere tras darle la Esmeralda Kokiri.",
+    "dungeon": "arbol-deku"
+  },
+  {
+    "id": "retono-deku",
+    "name": "el Retoño del Árbol Deku",
+    "aliases": [
+      "retono deku",
+      "retoño deku",
+      "deku tree sprout",
+      "arbolito deku"
+    ],
+    "where": "en la Pradera del Árbol Deku, de adulto",
+    "summary": "El nuevo árbol que brota cuando Saria despierta como sabia. Le revela a Link que no es un Kokiri."
+  },
+  {
+    "id": "darunia",
+    "name": "Darunia",
+    "aliases": [
+      "darunia",
+      "jefe goron",
+      "gran hermano"
+    ],
+    "where": "en su sala de Ciudad Goron",
+    "summary": "El jefe de los Goron, gruñón hasta que le tocas la Canción de Saria. Te nombra su hermano jurado y es el Sabio del Fuego."
+  },
+  {
+    "id": "link-goron",
+    "name": "Link Goron",
+    "aliases": [
+      "link goron",
+      "hijo de darunia",
+      "goron rodante"
+    ],
+    "where": "rodando por Ciudad Goron, de adulto",
+    "summary": "El hijo de Darunia, llamado así en honor a Link. Hay que detenerlo con una bomba para que te dé la Túnica Goron."
+  },
+  {
+    "id": "ruto",
+    "name": "la princesa Ruto",
+    "aliases": [
+      "ruto",
+      "princesa ruto",
+      "princess ruto"
+    ],
+    "where": "dentro de Jabu-Jabu (de niño); de adulto en el Templo del Agua",
+    "summary": "La princesa de los Zora, bastante mandona. Le da a Link el Zafiro Zora como prenda de compromiso y es la Sabia del Agua."
+  },
+  {
+    "id": "rey-zora",
+    "name": "el Rey Zora",
+    "aliases": [
+      "rey zora",
+      "king zora",
+      "rey de los zora"
+    ],
+    "where": "en su trono del Dominio Zora",
+    "summary": "El enorme y lento rey de los Zora, padre de Ruto. De adulto está congelado: descongélalo con Fuego azul y te dará la Túnica Zora."
+  },
+  {
+    "id": "jabu-jabu-personaje",
+    "name": "Lord Jabu-Jabu",
+    "aliases": [
+      "lord jabu jabu",
+      "jabu jabu",
+      "pez gigante",
+      "dios de los zora"
+    ],
+    "where": "en su altar de la Fuente Zora",
+    "summary": "El pez gigante que es el dios guardián de los Zora. Hay que darle un pez para que abra la boca y te trague.",
+    "dungeon": "jabu-jabu"
+  },
+  {
+    "id": "malon",
+    "name": "Malon",
+    "aliases": [
+      "malon",
+      "chica del rancho"
+    ],
+    "where": "frente al castillo y en el Rancho Lon Lon",
+    "summary": "La hija de Talon, dueña del rancho. Te regala el Huevo extraño y te enseña la Canción de Epona. De adulto trabaja bajo las órdenes de Ingo."
+  },
+  {
+    "id": "talon",
+    "name": "Talon",
+    "aliases": [
+      "talon",
+      "dueño del rancho",
+      "padre de malon"
+    ],
+    "where": "dormido junto al castillo; luego en el Rancho Lon Lon (de adulto en Kakariko)",
+    "summary": "El perezoso dueño del Rancho Lon Lon. Hay que despertarlo con un Cucco. De adulto, Ingo lo echa del rancho."
+  },
+  {
+    "id": "ingo",
+    "name": "Ingo",
+    "aliases": [
+      "ingo",
+      "trabajador del rancho"
+    ],
+    "where": "en el Rancho Lon Lon",
+    "summary": "El envidioso trabajador del rancho. De adulto se adueña de él para servir a Ganondorf, pero pierde a Epona en una carrera contra Link."
+  },
+  {
+    "id": "epona",
+    "name": "Epona",
+    "aliases": [
+      "epona",
+      "caballo de link",
+      "yegua"
+    ],
+    "where": "en el Rancho Lon Lon; de adulto se llama con su canción",
+    "summary": "La yegua de Malon y futura montura de Link. Se gana en una carrera contra Ingo y permite cruzar el Campo de Hyrule y saltar vallas."
+  },
+  {
+    "id": "nabooru",
+    "name": "Nabooru",
+    "aliases": [
+      "nabooru",
+      "ladrona gerudo",
+      "segunda de las gerudo"
+    ],
+    "where": "en el Coloso del Desierto",
+    "summary": "La segunda al mando de las Gerudo y rival de Ganondorf. Birova la captura y la convierte en un Nudillo de Hierro; al liberarla despierta como Sabia del Espíritu."
+  },
+  {
+    "id": "rauru",
+    "name": "Rauru",
+    "aliases": [
+      "rauru",
+      "sabio de la luz",
+      "sage of light"
+    ],
+    "where": "en la Cámara de los Sabios",
+    "summary": "El antiguo sabio que construyó el Templo del Tiempo. Recibe a Link tras sacar la Espada Maestra y le da el Medallón de la Luz. Adopta la forma de Kaepora Gaebora."
+  },
+  {
+    "id": "kaepora",
+    "name": "Kaepora Gaebora",
+    "aliases": [
+      "kaepora gaebora",
+      "kaepora",
+      "buho",
+      "el buho",
+      "owl"
+    ],
+    "where": "en muchos puntos del mapa: bosque, campo, lago y montaña",
+    "summary": "Un búho sabio y muy hablador que da consejos a Link (y siempre pregunta si quieres oírlos otra vez). Se insinúa que es Rauru."
+  },
+  {
+    "id": "sabios",
+    "name": "los Siete Sabios",
+    "aliases": [
+      "sabios",
+      "los sabios",
+      "siete sabios",
+      "seis sabios",
+      "sages"
+    ],
+    "where": "en la Cámara de los Sabios",
+    "summary": "Rauru (Luz), Saria (Bosque), Darunia (Fuego), Ruto (Agua), Impa (Sombras), Nabooru (Espíritu) y Zelda, la líder. Juntos sellan a Ganon en el Reino Sagrado."
+  },
+  {
+    "id": "vendedor-mascaras",
+    "name": "el Vendedor de Máscaras",
+    "aliases": [
+      "vendedor de mascaras",
+      "happy mask salesman",
+      "tienda de mascaras",
+      "vendedor feliz"
+    ],
+    "where": "en su tienda de la Ciudadela",
+    "summary": "Un comerciante sonriente que te presta máscaras para vendérselas a otros. Tras vender las cuatro primeras te da la Máscara de la verdad."
+  },
+  {
+    "id": "dampe",
+    "name": "Dampé",
+    "aliases": [
+      "dampe",
+      "dampé",
+      "enterrador",
+      "sepulturero"
+    ],
+    "where": "en el cementerio de Kakariko",
+    "summary": "El jorobado enterrador del cementerio. De niño organiza un juego de cavar tumbas; de adulto su fantasma te reta a una carrera que da el Gancho."
+  },
+  {
+    "id": "biggoron",
+    "name": "Biggoron",
+    "aliases": [
+      "biggoron",
+      "goron gigante"
+    ],
+    "where": "en la cima de la Montaña de la Muerte",
+    "summary": "Un Goron gigantesco y el mejor herrero de Hyrule. Al final de la secuencia de intercambio forja la Espada de Biggoron."
+  },
+  {
+    "id": "medigoron",
+    "name": "Medigoron",
+    "aliases": [
+      "medigoron"
+    ],
+    "where": "en su tienda de Ciudad Goron",
+    "summary": "El hermano herrero de Biggoron. Vende la Espada gigante por 200 rupias."
+  },
+  {
+    "id": "grandes-hadas",
+    "name": "las Grandes Hadas",
+    "aliases": [
+      "gran hada",
+      "grandes hadas",
+      "great fairy",
+      "fuente de la gran hada"
+    ],
+    "where": "en fuentes escondidas por Hyrule",
+    "summary": "Hadas enormes que aparecen al tocar la Nana de Zelda. Te dan magia, hechizos (Fuego de Din, Viento de Farore, Amor de Nayru) y mejoras de defensa."
+  },
+  {
+    "id": "diosas",
+    "name": "las Tres Diosas",
+    "aliases": [
+      "diosas",
+      "tres diosas",
+      "din",
+      "nayru",
+      "farore",
+      "diosas de oro",
+      "golden goddesses"
+    ],
+    "where": "en la leyenda de la creación",
+    "summary": "Din (Poder) creó la tierra, Nayru (Sabiduría) la ley y Farore (Valor) la vida. Al marcharse dejaron la Trifuerza en el Reino Sagrado."
+  },
+  {
+    "id": "skull-kid",
+    "name": "Skull Kid",
+    "aliases": [
+      "skull kid",
+      "chico calavera"
+    ],
+    "where": "en el Bosque Perdido",
+    "summary": "Un chico del bosque que toca la flauta. Te compra la Máscara de calavera y, si le tocas la Canción de Saria, te regala una Pieza de corazón."
+  },
+  {
+    "id": "hombre-corre",
+    "name": "el Hombre que corre",
+    "aliases": [
+      "hombre que corre",
+      "running man",
+      "corredor"
+    ],
+    "where": "en el Campo de Hyrule y en el Valle Gerudo",
+    "summary": "Un corredor obsesionado con las capuchas de conejo. De adulto te reta a una carrera que nunca podrás ganar."
+  },
+  {
+    "id": "fantasmas-poe",
+    "name": "el Coleccionista de Poes",
+    "aliases": [
+      "coleccionista de poes",
+      "poe collector",
+      "tienda de fantasmas"
+    ],
+    "where": "en la Tienda de fantasmas de la Ciudadela en ruinas, de adulto",
+    "summary": "Compra Grandes Poes embotellados. Al llevarle 10 te da una botella."
+  },
+  {
+    "id": "carpinteros",
+    "name": "los carpinteros",
+    "aliases": [
+      "carpinteros",
+      "jefe de los carpinteros",
+      "mutoh",
+      "carpenters"
+    ],
+    "where": "en Kakariko (de niño) y presos en la Fortaleza Gerudo (de adulto)",
+    "summary": "Mutoh y sus cuatro ayudantes. Al rescatarlos de la Fortaleza Gerudo reparan el puente del Valle Gerudo y las Gerudo te dan su pase de miembro."
+  },
+  {
+    "id": "anju",
+    "name": "la Dama de los Cuccos",
+    "aliases": [
+      "dama de los cuccos",
+      "cucco lady",
+      "anju",
+      "chica de los cuccos"
+    ],
+    "where": "en la Aldea Kakariko",
+    "summary": "Tiene alergia a sus propios Cuccos. Si le devuelves los siete que se escaparon, te da una botella."
+  },
+  {
+    "id": "guru-guru",
+    "name": "el hombre del molino",
+    "aliases": [
+      "hombre del molino",
+      "guru guru",
+      "hombre del fonografo",
+      "phonogram man"
+    ],
+    "where": "en el molino de Kakariko",
+    "summary": "Toca el organillo sin parar. De adulto te enseña la Canción de la tormenta... y culpa a un niño de haberla tocado hace siete años."
+  },
+  {
+    "id": "koume-kotake",
+    "name": "Koume y Kotake",
+    "aliases": [
+      "koume",
+      "kotake",
+      "gemelas gerudo"
+    ],
+    "where": "en el Templo del Espíritu",
+    "summary": "Las brujas gemelas, madres adoptivas de Ganondorf. Koume domina el fuego y Kotake el hielo; juntas forman Birova."
+  },
+  {
+    "id": "rey-hyrule",
+    "name": "el Rey de Hyrule",
+    "aliases": [
+      "rey de hyrule",
+      "king of hyrule",
+      "padre de zelda"
+    ],
+    "where": "en el Castillo de Hyrule (nunca aparece en pantalla)",
+    "summary": "El padre de Zelda. Aceptó la lealtad de Ganondorf sin sospechar su traición."
+  }
+]
