@@ -1,0 +1,122 @@
+[
+  {
+    "id": "reina-gohma",
+    "name": "Reina Gohma",
+    "aliases": ["reina gohma", "gohma", "queen gohma", "arácnido acorazado parasitario"],
+    "dungeon": "arbol-deku",
+    "summary": "Un arácnido acorazado parasitario con un gran ojo: el primer jefe del juego. Vive en el techo de las raíces del Gran Árbol Deku y pone huevos de los que salen larvas.",
+    "strategy": "Espera a que su ojo se ponga rojo y dispárale con el Tirachinas (o lánzale una Nuez Deku) para aturdirla. Cuando caiga, golpéala con la espada. Si se sube al techo, vuelve a darle con el tirachinas."
+  },
+  {
+    "id": "rey-dodongo",
+    "name": "Rey Dodongo",
+    "aliases": ["rey dodongo", "king dodongo", "dodongo gigante"],
+    "dungeon": "caverna-dodongos",
+    "summary": "Un Dodongo gigantesco, antiguo protector de la caverna, al que Ganondorf volvió loco. Devora todo lo que encuentra y escupe fuego.",
+    "strategy": "Cuando abra la boca para inhalar, lánzale una bomba dentro. Tras la explosión quedará aturdido: acércate y golpéalo con la espada. Esquiva cuando se enrolle y ruede por la sala."
+  },
+  {
+    "id": "barinade",
+    "name": "Barinade",
+    "aliases": ["barinade", "anemona parasita", "anémona bioeléctrica"],
+    "dungeon": "jabu-jabu",
+    "summary": "Una anémona bioeléctrica parásita que se ha instalado en el interior de Lord Jabu-Jabu y lo hace tragarse todo. Se protege con una nube de Bari.",
+    "strategy": "Usa el Bumerán para cortar los tentáculos que la unen al techo. Después, aturde el cuerpo con el bumerán y elimina a los Bari que la rodean. Cuando quede expuesta, atúrdela otra vez y golpéala con la espada."
+  },
+  {
+    "id": "ganon-fantasma",
+    "name": "Ganon Fantasma",
+    "aliases": ["ganon fantasma", "phantom ganon", "fantasma de ganon"],
+    "dungeon": "templo-bosque",
+    "summary": "Un espectro creado por Ganondorf a su imagen, montado en un caballo fantasma. Es el jefe del Templo del Bosque y aparece saliendo de los cuadros de la sala.",
+    "strategy": "Primera fase: dispara con el Arco al Ganon Fantasma real cuando salga de un cuadro (el falso da la vuelta antes). Segunda fase: devuélvele las bolas de energía con la espada, como un partido de tenis, hasta que caiga, y golpéalo."
+  },
+  {
+    "id": "volvagia",
+    "name": "Volvagia",
+    "aliases": ["volvagia", "dragon volvagia", "dragón del volcán"],
+    "dungeon": "templo-fuego",
+    "summary": "Un antiguo dragón de fuego de la Montaña de la Muerte, derrotado hace siglos por un héroe Goron con el Martillo Megatón. Ganondorf lo revivió para devorar a los Goron.",
+    "strategy": "Sale de los agujeros de lava del suelo. Golpéale la cabeza con el Martillo Megatón cuando asome y remátalo con la espada. Cuando vuele y haga caer rocas, busca la sombra y apártate."
+  },
+  {
+    "id": "morpha",
+    "name": "Morpha",
+    "aliases": ["morpha", "ameba gigante", "morfa"],
+    "dungeon": "templo-agua",
+    "summary": "Un ser acuático creado por Ganondorf que controla toda el agua de su sala. Es el responsable de que el Lago Hylia se secara. Su punto débil es un núcleo rojo.",
+    "strategy": "Usa el Gancho largo para sacar el núcleo de los tentáculos de agua y golpéalo con la espada mientras está fuera. Quédate en los bordes de la sala para que no te atrape."
+  },
+  {
+    "id": "bongo-bongo",
+    "name": "Bongo Bongo",
+    "aliases": ["bongo bongo", "bongo", "espectro de las sombras"],
+    "dungeon": "templo-sombras",
+    "summary": "Un espectro invisible de un solo ojo que toca un gran tambor con sus dos manos. Es el jefe del Templo de las Sombras, antiguo ser encerrado bajo el pozo de Kakariko.",
+    "strategy": "Aturde sus manos con flechas (o golpes) y, cuando las dos estén quietas, usa la Lente de la Verdad para ver su ojo y dispárale una flecha. Luego golpéalo con la espada mientras está en el suelo."
+  },
+  {
+    "id": "birova",
+    "name": "Birova (Koume y Kotake)",
+    "aliases": ["birova", "twinrova", "koume y kotake", "las brujas gemelas", "brujas gerudo"],
+    "dungeon": "templo-espiritu",
+    "summary": "Las gemelas brujas Gerudo Koume (fuego) y Kotake (hielo), de 400 años, madres adoptivas de Ganondorf. Primero luchan por separado y luego se fusionan en Birova.",
+    "strategy": "Con el Escudo espejo, absorbe tres disparos del mismo elemento y devuélveselos a Birova (fuego para aturdir con hielo y viceversa). Cuando caiga, golpéala con la espada."
+  },
+  {
+    "id": "ganondorf",
+    "name": "Ganondorf",
+    "aliases": ["ganondorf", "rey de los ladrones", "rey del mal", "ganondorf dragmire"],
+    "dungeon": "castillo-ganon",
+    "summary": "El rey de las Gerudo, el único varón nacido en su tribu en un siglo. Juró lealtad al Rey de Hyrule solo para acercarse al Reino Sagrado; al entrar en él obtuvo la Trifuerza del Poder y sumió Hyrule en la oscuridad durante siete años.",
+    "strategy": "En la cima de su torre, devuélvele sus esferas de energía con la espada (o con la botella vacía) hasta aturdirlo. Entonces dispárale una Flecha de luz y remátalo con la espada."
+  },
+  {
+    "id": "ganon",
+    "name": "Ganon",
+    "aliases": ["ganon", "la bestia ganon", "bestia de ganon"],
+    "dungeon": "castillo-ganon",
+    "summary": "La forma bestial de Ganondorf, transformado por el poder de la Trifuerza del Poder entre las ruinas de su castillo. Es el jefe final del juego.",
+    "strategy": "Al empezar te quita la Espada Maestra: usa la Espada de Biggoron o el Martillo Megatón. Golpea su cola, su punto débil, hasta que Zelda lo inmovilice y puedas recuperar la Espada Maestra para el golpe final. Las Flechas de luz también lo aturden."
+  },
+  {
+    "id": "link-oscuro",
+    "name": "Link Oscuro",
+    "aliases": ["link oscuro", "dark link", "sombra de link"],
+    "dungeon": "templo-agua",
+    "summary": "Una copia oscura de Link que aparece en una sala neblinosa del Templo del Agua. Imita todos tus movimientos.",
+    "strategy": "Las estocadas normales no sirven porque las copia. Funcionan muy bien el Martillo Megatón, el Fuego de Din o los golpes giratorios."
+  },
+  {
+    "id": "flare-dancer",
+    "name": "Flare Dancer",
+    "aliases": ["flare dancer", "bailarin de fuego", "bailarina de fuego"],
+    "dungeon": "templo-fuego",
+    "summary": "Un espíritu de fuego que baila por la sala. Es el minijefe del Templo del Fuego.",
+    "strategy": "Usa el Gancho para quitarle las llamas; entonces su núcleo correrá por la sala. Atrápalo y golpéalo con la espada antes de que vuelva a prenderse."
+  },
+  {
+    "id": "big-octo",
+    "name": "Big Octo",
+    "aliases": ["big octo", "gran octorok", "pulpo gigante"],
+    "dungeon": "jabu-jabu",
+    "summary": "Un Octorok gigante que vive en la tripa de Jabu-Jabu. Es el minijefe de esa mazmorra.",
+    "strategy": "Persíguelo por la pista circular y golpéale la parte trasera con la espada. Para aturdirlo, usa el Bumerán."
+  },
+  {
+    "id": "mano-muerta",
+    "name": "Mano Muerta",
+    "aliases": ["mano muerta", "dead hand", "manos muertas"],
+    "dungeon": "fondo-pozo",
+    "summary": "Una criatura grotesca rodeada de brazos que salen del suelo. Aparece en el fondo del pozo y en el Templo de las Sombras.",
+    "strategy": "Deja que uno de los brazos te agarre: la criatura se acercará. Suéltate y golpéale la cabeza con la espada. Evita que te muerda."
+  },
+  {
+    "id": "nudillos-hierro",
+    "name": "Nudillos de Hierro",
+    "aliases": ["nudillos de hierro", "iron knuckle", "caballero de hierro"],
+    "dungeon": "templo-espiritu",
+    "summary": "Caballeros con armadura pesada y hachas enormes. En el Templo del Espíritu, uno de ellos es Nabooru controlada por Birova.",
+    "strategy": "Son lentos pero cada golpe duele. Espera a que ataquen, esquiva hacia atrás y contraataca. Al perder la armadura se vuelven más rápidos."
+  }
+]

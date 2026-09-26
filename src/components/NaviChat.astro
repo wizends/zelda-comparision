@@ -1,0 +1,40 @@
+<!-- Navi: asistente de Ocarina of Time (NLP.js, ver src/lib/navi).
+     Al abrirlo se muestra como en el juego: la caja azul de Navi en la parte baja de la pantalla,
+     con el texto por páginas, el ▼ verde para continuar y las opciones en verde. -->
+<div class="navi" data-navi>
+  <button class="navi-fab" type="button" aria-label="Hablar con Navi" aria-expanded="false" aria-controls="navi-panel">
+    <span class="navi-body" aria-hidden="true">
+      <i class="navi-wing w1"></i><i class="navi-wing w2"></i><i class="navi-wing w3"></i><i class="navi-wing w4"></i>
+      <span class="navi-orb"></span>
+    </span>
+  </button>
+  <p class="navi-callout" hidden aria-hidden="true">¡Hey! ¡Escucha!</p>
+
+  <div class="navi-scene" id="navi-panel" role="dialog" aria-label="Navi, guía de Ocarina of Time" hidden>
+    <!-- Tu pregunta: caja negra, como los textos normales del juego -->
+    <form class="navi-ask">
+      <span class="navi-ask-cursor" aria-hidden="true">▶</span>
+      <input type="text" maxlength="500" autocomplete="off" placeholder="Pregúntale algo a Navi…" aria-label="Tu pregunta para Navi" />
+      <button class="navi-send" type="submit" aria-label="Preguntar">A</button>
+    </form>
+
+    <!-- La respuesta de Navi: caja azul -->
+    <div class="navi-box" tabindex="0" aria-label="Respuesta de Navi (clic o Enter para continuar)">
+      <span class="navi-sprite" aria-hidden="true">
+        <span class="navi-body">
+          <i class="navi-wing w1"></i><i class="navi-wing w2"></i><i class="navi-wing w3"></i><i class="navi-wing w4"></i>
+          <span class="navi-orb"></span>
+        </span>
+      </span>
+      <p class="navi-text" aria-hidden="true"></p>
+      <ul class="navi-choices" hidden></ul>
+      <span class="navi-next" aria-hidden="true"></span>
+      <button class="navi-close" type="button" aria-label="Salir">B</button>
+    </div>
+
+    <p class="navi-hint">
+      <span class="navi-keys">Clic o <kbd>Enter</kbd> para continuar · <kbd>Esc</kbd> para salir · </span>Conocimiento de <a href="https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank" rel="noopener">Zelda Wiki</a> (CC BY-SA)
+    </p>
+    <p class="navi-sr" aria-live="polite"></p>
+  </div>
+</div>

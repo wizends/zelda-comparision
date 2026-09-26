@@ -1,0 +1,119 @@
+[
+  {
+    "id": "nana-zelda",
+    "name": "La Nana de Zelda",
+    "aliases": ["nana de zelda", "cancion de cuna de zelda", "zelda's lullaby", "zeldas lullaby", "cancion de la familia real", "melodia de la familia real"],
+    "teacher": "Impa",
+    "where": "en el patio del Castillo de Hyrule, de niño, después de conocer a Zelda",
+    "effect": "Es la melodía de la familia real. Abre puertas y mecanismos con el emblema real, despeja la cascada del Dominio Zora, activa los símbolos de la Trifuerza del Templo del Agua para cambiar el nivel del agua y hace aparecer cofres y hadas.",
+    "summary": "La canción que Impa enseña a Link como prueba de que viene de parte de la princesa."
+  },
+  {
+    "id": "cancion-epona",
+    "name": "La Canción de Epona",
+    "aliases": ["cancion de epona", "epona's song", "eponas song", "cancion del caballo"],
+    "teacher": "Malon",
+    "where": "en el Rancho Lon Lon, de niño (Malon la canta en el corral)",
+    "effect": "De niño hace que Epona se acerque y confíe en ti. De adulto, una vez que ganas a Epona en la carrera contra Ingo, sirve para llamarla en el Campo de Hyrule. También hace que las vacas te den Leche Lon Lon.",
+    "summary": "La compuso la madre de Malon, según cuenta la propia Malon."
+  },
+  {
+    "id": "cancion-saria",
+    "name": "La Canción de Saria",
+    "aliases": ["cancion de saria", "saria's song", "sarias song", "musica del bosque perdido"],
+    "teacher": "Saria",
+    "where": "en el Prado Sagrado, de niño, donde Saria la toca sentada en el tocón",
+    "effect": "Permite hablar con Saria desde cualquier lugar para pedirle pistas, pone a bailar a Darunia (que entonces te da el Brazalete Goron) y alegra a los Skull Kid del Bosque Perdido.",
+    "summary": "Un símbolo de la amistad entre Saria y Link."
+  },
+  {
+    "id": "cancion-sol",
+    "name": "La Canción del Sol",
+    "aliases": ["cancion del sol", "sun's song", "suns song", "cancion del dia"],
+    "teacher": "la tumba de la familia real",
+    "where": "grabada en la pared de la tumba de la familia real, bajo el cementerio de Kakariko (de niño)",
+    "effect": "Cambia entre el día y la noche, paraliza a los ReDead y Gibdos y abre algunos cofres y puertas.",
+    "summary": "La compusieron los hermanos compositores Flat y Sharp por encargo de la familia real."
+  },
+  {
+    "id": "cancion-tiempo",
+    "name": "La Canción del Tiempo",
+    "aliases": ["cancion del tiempo", "song of time", "melodia del tiempo"],
+    "teacher": "la princesa Zelda",
+    "where": "junto al foso del Castillo de Hyrule, de niño, al recibir la Ocarina del Tiempo (Zelda te la enseña en un recuerdo)",
+    "effect": "Abre la Puerta del Tiempo en el Templo del Tiempo cuando tienes las tres Piedras Espirituales. También hace aparecer y desaparecer los bloques azules con el símbolo del tiempo.",
+    "summary": "Una melodía sagrada que solo conoce la familia real."
+  },
+  {
+    "id": "cancion-tormenta",
+    "name": "La Canción de la tormenta",
+    "aliases": ["cancion de la tormenta", "song of storms", "cancion de las tormentas", "cancion de la lluvia"],
+    "teacher": "el hombre del fonógrafo (Guru-Guru) en el molino de Kakariko",
+    "where": "en el molino de Kakariko, de adulto",
+    "effect": "Invoca la lluvia, revela grutas secretas, hace crecer brotes de habichuela mágica y, tocada de niño en el molino, vacía el pozo de Kakariko y abre el camino al fondo del pozo.",
+    "summary": "Una paradoja temporal: Link adulto la aprende del hombre del molino, que se enfada porque un niño la tocó hace siete años... y ese niño es el propio Link."
+  },
+  {
+    "id": "minueto-bosque",
+    "name": "El Minueto del bosque",
+    "aliases": ["minueto del bosque", "minuet of forest", "minueto"],
+    "teacher": "Sheik",
+    "where": "en el Prado Sagrado, de adulto, antes de entrar al Templo del Bosque",
+    "effect": "Teletransporta a Link al Prado Sagrado, a la entrada del Templo del Bosque.",
+    "summary": "La primera de las seis canciones de teletransporte."
+  },
+  {
+    "id": "bolero-fuego",
+    "name": "El Bolero del fuego",
+    "aliases": ["bolero del fuego", "bolero of fire", "bolero"],
+    "teacher": "Sheik",
+    "where": "en el Cráter de la Montaña de la Muerte, de adulto, tras conseguir la Túnica Goron",
+    "effect": "Teletransporta a Link al Cráter de la Montaña de la Muerte, junto al Templo del Fuego.",
+    "summary": "Canción de teletransporte hacia el volcán."
+  },
+  {
+    "id": "serenata-agua",
+    "name": "La Serenata del agua",
+    "aliases": ["serenata del agua", "serenade of water", "serenata"],
+    "teacher": "Sheik",
+    "where": "a la salida de la Caverna de hielo, de adulto, tras conseguir las Botas de hierro",
+    "effect": "Teletransporta a Link al Lago Hylia, sobre la entrada del Templo del Agua.",
+    "summary": "Canción de teletransporte hacia el lago."
+  },
+  {
+    "id": "nocturno-sombra",
+    "name": "El Nocturno de la sombra",
+    "aliases": ["nocturno de la sombra", "nocturne of shadow", "nocturno"],
+    "teacher": "Sheik",
+    "where": "en la Aldea Kakariko en llamas, de adulto, después de conseguir los medallones del bosque, el fuego y el agua",
+    "effect": "Teletransporta a Link a la parte alta del cementerio de Kakariko. Es la única forma de llegar al Templo de las Sombras.",
+    "summary": "Sheik lo enseña justo cuando una sombra ataca Kakariko e Impa desaparece."
+  },
+  {
+    "id": "requiem-espiritu",
+    "name": "El Réquiem del espíritu",
+    "aliases": ["requiem del espiritu", "requiem of spirit", "requiem"],
+    "teacher": "Sheik",
+    "where": "en el Coloso del Desierto, de adulto, al comprobar que el Templo del Espíritu no se puede recorrer todavía",
+    "effect": "Teletransporta a Link al Coloso del Desierto con cualquier edad. Es la forma de volver allí de niño.",
+    "summary": "Canción de teletransporte hacia el desierto."
+  },
+  {
+    "id": "preludio-luz",
+    "name": "El Preludio de la luz",
+    "aliases": ["preludio de la luz", "prelude of light", "preludio"],
+    "teacher": "Sheik",
+    "where": "en el Templo del Tiempo, de adulto, tras completar el Templo del Bosque",
+    "effect": "Teletransporta a Link al Templo del Tiempo, muy útil para cambiar de edad rápidamente.",
+    "summary": "Canción de teletransporte hacia el Templo del Tiempo."
+  },
+  {
+    "id": "cancion-espantapajaros",
+    "name": "La Canción del espantapájaros",
+    "aliases": ["cancion del espantapajaros", "scarecrow's song", "scarecrows song", "espantapajaros", "pierre", "bonooru"],
+    "teacher": "tú mismo (la compones para Bonooru)",
+    "where": "en el Lago Hylia: de niño le tocas a Bonooru una melodía de 8 notas y de adulto se la repites",
+    "effect": "Invoca a Pierre, el espantapájaros, en puntos concretos para que te sirva de blanco con el Gancho y llegues a sitios altos.",
+    "summary": "La única canción que compone el propio jugador."
+  }
+]

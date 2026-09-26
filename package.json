@@ -8,9 +8,15 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check"
+    "check": "astro check",
+    "train:navi": "node scripts/train-navi.js",
+    "test:navi": "node scripts/test-navi.js"
   },
   "dependencies": {
+    "@astrojs/vercel": "^11.0.11",
+    "@nlpjs/core": "^4.26.1",
+    "@nlpjs/lang-es": "^4.26.1",
+    "@nlpjs/nlp": "^4.27.0",
     "astro": "^7.3.5"
   },
   "devDependencies": {

@@ -5,6 +5,7 @@ Web comparativa escena a escena entre *The Legend of Zelda: Ocarina of Time* par
 - **Mitad izquierda:** estilo de la web oficial del remake (oscuro, cinematográfico, bronce y oro).
 - **Mitad derecha:** estilo N64 (fondo low-poly, píxeles, scanlines, cajas de diálogo del juego).
 - Haz clic en cualquier escena para abrir el comparador con deslizador.
+- **Navi, el chatbot:** un hada flotante (abajo a la izquierda) que responde preguntas sobre Ocarina of Time (ver [Navi](#navi-el-chatbot)).
 - **Música por sección:** al activarla con el botón inferior central, cada sección reproduce su canción original desde YouTube o, si no tiene, un tema generado (ver [Música](#música)).
 
 ## Desarrollo
@@ -31,12 +32,33 @@ src/
   scripts/music.ts           música por sección: temas generados y fundidos
   scripts/youtube.ts         reproductor de YouTube visible con fundidos de volumen
   lib/youtube-search.ts      búsqueda de vídeos con la YouTube Data API al compilar
+  lib/navi/                  chatbot Navi: nlp.js, brain.ts, runtime.ts, corpus.json, knowledge/*.json, testCases.json
+  pages/api/navi.ts          endpoint POST /api/navi (función de Vercel; el resto es estático)
+  components/NaviChat.astro  hada flotante y panel de chat (lógica en scripts/navi.ts)
+scripts/train-navi.js        entrena el modelo (se ejecuta solo en cada build)
+scripts/test-navi.js         conversaciones de prueba contra el endpoint
   styles/global.css          estilos de ambas mitades
 public/img/                  imágenes optimizadas <id>-remake.webp / <id>-n64.webp
 _originals/                  descargas a resolución completa (ignoradas por git y Vercel)
 ```
 
 Para añadir una escena, deja las dos imágenes en `public/img/` y añade una entrada en `src/data/chapters.ts`.
+
+## Navi, el chatbot
+
+Navi responde preguntas sobre Ocarina of Time. Sigue la misma arquitectura que Elisa (el bot del portafolio): **sin LLM**, con [NLP.js](https://github.com/axa-group/nlp.js) en español.
+
+- **Conocimiento** (`src/lib/navi/knowledge/*.json`): 194 temas del juego (mazmorras, jefes, canciones, objetos, personajes, lugares, enemigos y razas) resumidos en español a partir de las páginas de Ocarina of Time de [Zelda Wiki](https://zeldawiki.wiki) (CC BY-SA 3.0), cada uno con sus alias en español e inglés.
+- **Corpus** (`src/lib/navi/corpus.json`): intenciones fijas (historia, remake, lista de mazmorras y canciones, máscaras, corazones…) e intenciones por tipo de pregunta con el marcador `@tema` (qué es, dónde está, jefe, tesoro, recompensa, cómo derrotarlo, para qué sirve, consejo).
+- **Cerebro** (`brain.ts`): detecta el tema, sustituye su nombre por una palabra fija para clasificar la pregunta y arma la respuesta según el tipo de tema. Recuerda el tema de la conversación para seguimientos como «¿y su jefe?».
+- **Entrenamiento en el build**: un plugin de Vite (`astro.config.mjs`) ejecuta `scripts/train-navi.js` y genera `model.generated.json`; la función solo lo carga.
+
+```bash
+npm run train:navi   # entrena a mano
+npm run test:navi    # con npm run dev en marcha: prueba las conversaciones de testCases.json
+```
+
+Para añadir un tema, agrégalo al JSON de su tipo (con `id`, `name`, `aliases` y sus campos) y vuelve a ejecutar las pruebas.
 
 ## Música
 

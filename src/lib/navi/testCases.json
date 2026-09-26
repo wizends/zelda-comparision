@@ -1,0 +1,356 @@
+{
+  "_comment": "Preguntas redactadas distinto al corpus. Cada conversación comparte contexto entre turnos; has: texto que debe aparecer en la respuesta. Las usa npm run test:navi.",
+  "conversations": [
+    [
+      {
+        "q": "holaa navi!",
+        "intent": "saludo"
+      }
+    ],
+    [
+      {
+        "q": "¿Quién eres tú?",
+        "intent": "navi.identidad"
+      }
+    ],
+    [
+      {
+        "q": "que puedo preguntarte?",
+        "intent": "navi.capacidades"
+      }
+    ],
+    [
+      {
+        "q": "HEY LISTEN",
+        "intent": "navi.hey"
+      }
+    ],
+    [
+      {
+        "q": "cuando salio el juego original?",
+        "intent": "juego.info",
+        "has": "1998"
+      }
+    ],
+    [
+      {
+        "q": "quien compuso la musica del juego",
+        "intent": "juego.desarrollo",
+        "has": "Koji Kondo"
+      }
+    ],
+    [
+      {
+        "q": "¿Cuándo sale el remake para Switch 2?",
+        "intent": "juego.remake",
+        "has": "noviembre de 2026"
+      }
+    ],
+    [
+      {
+        "q": "¿Qué es Master Quest?",
+        "intent": "juego.versiones",
+        "has": "GameCube"
+      }
+    ],
+    [
+      {
+        "q": "cuentame la historia del juego",
+        "intent": "historia.resumen",
+        "has": "Ganondorf"
+      }
+    ],
+    [
+      {
+        "q": "¿Cómo vuelvo a ser niño?",
+        "intent": "historia.viaje",
+        "has": "Espada Maestra"
+      }
+    ],
+    [
+      {
+        "q": "en qué orden hago los templos",
+        "intent": "mazmorras.lista",
+        "has": "Templo del Bosque"
+      }
+    ],
+    [
+      {
+        "q": "¿qué canciones se pueden tocar con la ocarina?",
+        "intent": "canciones.lista",
+        "has": "Minueto"
+      }
+    ],
+    [
+      {
+        "q": "¿Cuántos corazones puedo tener como máximo?",
+        "intent": "corazones",
+        "has": "20"
+      }
+    ],
+    [
+      {
+        "q": "¿Quién hizo esta página?",
+        "intent": "web.info",
+        "has": "Ricardo"
+      }
+    ],
+    [
+      {
+        "q": "¿Dónde va Ocarina of Time en la línea temporal?",
+        "intent": "cronologia",
+        "has": "tres ramas"
+      }
+    ],
+    [
+      {
+        "q": "cual es la capital de francia",
+        "intent": [
+          "fuera_de_tema",
+          "None"
+        ]
+      }
+    ],
+    [
+      {
+        "q": "¿Cómo derroto a Volvagia?",
+        "intent": "tema.derrotar",
+        "has": "Martillo Megatón"
+      },
+      {
+        "q": "¿y dónde está?",
+        "intent": "tema.donde",
+        "has": "Templo del Fuego"
+      }
+    ],
+    [
+      {
+        "q": "háblame del templo del agua",
+        "intent": "tema.info",
+        "has": "Lago Hylia"
+      },
+      {
+        "q": "¿y quién es su jefe?",
+        "intent": "tema.jefe",
+        "has": "Morpha"
+      },
+      {
+        "q": "¿qué objeto hay?",
+        "intent": "tema.tesoro",
+        "has": "Gancho largo"
+      },
+      {
+        "q": "¿qué recompensa da?",
+        "intent": "tema.recompensa",
+        "has": "Ruto"
+      }
+    ],
+    [
+      {
+        "q": "quien es el jefe de la caverna de los dodongos",
+        "intent": "tema.jefe",
+        "has": "Rey Dodongo"
+      }
+    ],
+    [
+      {
+        "q": "qué me dan en el templo de las sombras",
+        "intent": [
+          "tema.tesoro",
+          "tema.recompensa"
+        ],
+        "has": "Sombras"
+      }
+    ],
+    [
+      {
+        "q": "¿Dónde consigo el gancho?",
+        "intent": "tema.donde",
+        "has": "Dampé"
+      }
+    ],
+    [
+      {
+        "q": "donde encuentro las botas de hierro",
+        "intent": "tema.donde",
+        "has": "Caverna de hielo"
+      }
+    ],
+    [
+      {
+        "q": "¿Para qué sirve la lente de la verdad?",
+        "intent": "tema.uso",
+        "has": "invisibles"
+      },
+      {
+        "q": "¿y dónde se consigue?",
+        "intent": "tema.donde",
+        "has": "pozo"
+      }
+    ],
+    [
+      {
+        "q": "¿Dónde aprendo la canción de la tormenta?",
+        "intent": "tema.donde",
+        "has": "molino"
+      }
+    ],
+    [
+      {
+        "q": "¿quién me enseña el bolero del fuego?",
+        "intent": "tema.donde",
+        "has": "Sheik"
+      }
+    ],
+    [
+      {
+        "q": "¿Qué hace la canción del sol?",
+        "intent": "tema.uso",
+        "has": "noche"
+      }
+    ],
+    [
+      {
+        "q": "¿Quién es Sheik?",
+        "intent": "tema.info",
+        "has": "Zelda"
+      }
+    ],
+    [
+      {
+        "q": "¿quién es saria?",
+        "intent": "tema.info",
+        "has": "Sabia del Bosque"
+      }
+    ],
+    [
+      {
+        "q": "Darunia",
+        "intent": "tema.info",
+        "has": "Goron"
+      }
+    ],
+    [
+      {
+        "q": "¿Cómo mato a los ReDead?",
+        "intent": "tema.derrotar",
+        "has": "Canción del Sol"
+      }
+    ],
+    [
+      {
+        "q": "¿cuál es el punto débil de bongo bongo?",
+        "intent": "tema.derrotar",
+        "has": "Lente de la Verdad"
+      }
+    ],
+    [
+      {
+        "q": "estoy atascado en el templo del bosque",
+        "intent": "tema.consejo",
+        "has": "Pista"
+      }
+    ],
+    [
+      {
+        "q": "¿Qué es la Trifuerza?",
+        "intent": "tema.info",
+        "has": "Poder"
+      }
+    ],
+    [
+      {
+        "q": "donde queda el rancho lon lon",
+        "intent": "tema.donde",
+        "has": "Campo de Hyrule"
+      }
+    ],
+    [
+      {
+        "q": "hola, ¿qué es la espada de biggoron?",
+        "intent": "tema.info",
+        "has": "dos manos"
+      }
+    ],
+    [
+      {
+        "q": "¿qué dan las skulltulas doradas?",
+        "intent": [
+          "tema.info",
+          "tema.uso",
+          "tema.recompensa"
+        ],
+        "has": "Cartera"
+      }
+    ],
+    [
+      {
+        "q": "como derroto a la reina gohma",
+        "intent": "tema.derrotar",
+        "has": "Tirachinas"
+      }
+    ],
+    [
+      {
+        "q": "¿Cómo derroto al jefe?",
+        "intent": "tema.derrotar",
+        "has": "¿Sobre qué"
+      }
+    ],
+    [
+      {
+        "q": "que hay en el lago hylia",
+        "intent": "tema.info",
+        "has": "Estanque de pesca"
+      }
+    ],
+    [
+      {
+        "q": "quien es el jefe de jabu jabu",
+        "intent": "tema.jefe",
+        "has": "Barinade"
+      }
+    ],
+    [
+      {
+        "q": "que recompensa da morpha",
+        "intent": "tema.recompensa",
+        "has": "Medallón del Agua"
+      }
+    ],
+    [
+      {
+        "q": "cuantas skulltulas hay",
+        "intent": "tema.info",
+        "has": "Casa de las Skulltulas"
+      }
+    ],
+    [
+      {
+        "q": "donde consigo flechas de fuego",
+        "intent": "tema.donde",
+        "has": "se consiguen"
+      }
+    ],
+    [
+      {
+        "q": "donde aprendo el minueto",
+        "intent": "tema.donde",
+        "has": "te lo enseña"
+      }
+    ],
+    [
+      {
+        "q": "eres tonta",
+        "intent": "insulto"
+      }
+    ],
+    [
+      {
+        "q": "hola navi, donde esta la espada maestra?",
+        "intent": "tema.donde",
+        "has": "Templo del Tiempo"
+      }
+    ]
+  ]
+}

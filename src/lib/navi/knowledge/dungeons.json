@@ -1,0 +1,230 @@
+[
+  {
+    "id": "arbol-deku",
+    "name": "el interior del Gran Árbol Deku",
+    "aliases": [
+      "interior del arbol deku",
+      "dentro del arbol deku",
+      "arbol deku mazmorra",
+      "inside the deku tree",
+      "mazmorra del arbol deku"
+    ],
+    "order": 1,
+    "age": "niño",
+    "where": "en la Pradera del Gran Árbol Deku, al fondo del Bosque Kokiri",
+    "treasure": "el Tirachinas de las hadas",
+    "miniboss": "",
+    "boss": "reina-gohma",
+    "reward": "la Esmeralda Kokiri (Piedra Espiritual del Bosque)",
+    "summary": "La primera mazmorra del juego. Ganondorf maldijo al Gran Árbol Deku y un parásito se instaló en sus raíces. Es un tutorial perfecto: telarañas que se rompen cayendo desde arriba, antorchas para encender palos Deku y los primeros Deku Scrubs.",
+    "tip": "Si la telaraña del suelo te bloquea, sube al piso de arriba y déjate caer sobre ella."
+  },
+  {
+    "id": "caverna-dodongos",
+    "name": "la Caverna de los Dodongos",
+    "aliases": [
+      "caverna de los dodongos",
+      "cueva de los dodongos",
+      "caverna dodongo",
+      "dodongos cavern",
+      "dodongo's cavern"
+    ],
+    "order": 2,
+    "age": "niño",
+    "where": "en el Sendero de la Montaña de la Muerte, junto a Ciudad Goron",
+    "treasure": "la Bolsa de bombas",
+    "miniboss": "dos Lizalfos",
+    "boss": "rey-dodongo",
+    "reward": "el Rubí Goron (Piedra Espiritual del Fuego), que entrega Darunia",
+    "summary": "Una cueva volcánica que los Goron usaban para conseguir sus rocas favoritas, hasta que Ganondorf la infestó de Dodongos. Está llena de bombas, paredes que se pueden volar y fuego.",
+    "tip": "Las flores bomba se pueden coger y lanzar; muchas paredes agrietadas esconden el camino."
+  },
+  {
+    "id": "jabu-jabu",
+    "name": "la tripa de Jabu-Jabu",
+    "aliases": [
+      "tripa de jabu jabu",
+      "dentro de jabu jabu",
+      "interior de jabu jabu",
+      "barriga de jabu jabu",
+      "inside jabu-jabu's belly",
+      "jabu jabu's belly",
+      "vientre de jabu jabu"
+    ],
+    "order": 3,
+    "age": "niño",
+    "where": "dentro de Lord Jabu-Jabu, en la Fuente Zora",
+    "treasure": "el Bumerán",
+    "miniboss": "Big Octo",
+    "boss": "barinade",
+    "reward": "el Zafiro Zora (Piedra Espiritual del Agua), que entrega la princesa Ruto",
+    "summary": "El interior del dios guardián de los Zora. Barinade lo parasita y le hace tragarse todo lo que aparece en su altar, incluida la princesa Ruto, a la que tienes que llevar en brazos por buena parte de la mazmorra.",
+    "tip": "Ruto puede quedarse sobre los interruptores del suelo mientras exploras."
+  },
+  {
+    "id": "templo-bosque",
+    "name": "el Templo del Bosque",
+    "aliases": [
+      "templo del bosque",
+      "forest temple",
+      "templo bosque"
+    ],
+    "order": 4,
+    "age": "adulto",
+    "where": "al final del Prado Sagrado, pasando el Bosque Perdido",
+    "treasure": "el Arco de las hadas",
+    "miniboss": "dos Stalfos",
+    "boss": "ganon-fantasma",
+    "reward": "el Medallón del Bosque, que entrega Saria (Sabia del Bosque)",
+    "summary": "Una mansión en ruinas invadida por la vegetación. Cuatro Poes hermanas (Joelle, Beth, Amy y Meg) han robado las llamas de las antorchas del vestíbulo, y hay que derrotarlas a todas para bajar al jefe.",
+    "tip": "El pasillo retorcido cambia la orientación de la sala: dispara con el arco al ojo para girarlo."
+  },
+  {
+    "id": "templo-fuego",
+    "name": "el Templo del Fuego",
+    "aliases": [
+      "templo del fuego",
+      "fire temple",
+      "templo fuego"
+    ],
+    "order": 5,
+    "age": "adulto",
+    "where": "en el Cráter de la Montaña de la Muerte",
+    "treasure": "el Martillo Megatón",
+    "miniboss": "Flare Dancer",
+    "boss": "volvagia",
+    "reward": "el Medallón del Fuego, que entrega Darunia (Sabio del Fuego)",
+    "summary": "El templo dentro del volcán donde Ganondorf ha encerrado a los Goron para dárselos de comer a Volvagia. Es obligatorio llevar la Túnica Goron por el calor.",
+    "tip": "Libera a los Goron encerrados en las celdas: cada uno te da información y una llave."
+  },
+  {
+    "id": "templo-agua",
+    "name": "el Templo del Agua",
+    "aliases": [
+      "templo del agua",
+      "water temple",
+      "templo agua"
+    ],
+    "order": 6,
+    "age": "adulto",
+    "where": "en el fondo del Lago Hylia",
+    "treasure": "el Gancho largo",
+    "miniboss": "Link Oscuro",
+    "boss": "morpha",
+    "reward": "el Medallón del Agua, que entrega Ruto (Sabia del Agua)",
+    "summary": "El templo más famoso (y temido) del juego: hay que subir y bajar el nivel del agua en tres alturas tocando la Nana de Zelda en los símbolos de la Trifuerza. Necesitas la Túnica Zora y las Botas de hierro.",
+    "tip": "Si te atascas, revisa en qué nivel de agua estás: casi todas las salas cambian según la altura."
+  },
+  {
+    "id": "fondo-pozo",
+    "name": "el fondo del pozo",
+    "aliases": [
+      "fondo del pozo",
+      "el pozo",
+      "pozo de kakariko",
+      "bottom of the well"
+    ],
+    "order": 7,
+    "age": "niño",
+    "where": "bajo el pozo de la Aldea Kakariko (se vacía tocando la Canción de la tormenta en el molino)",
+    "treasure": "la Lente de la Verdad",
+    "miniboss": "Mano Muerta (Dead Hand)",
+    "boss": "",
+    "reward": "la Lente de la Verdad, imprescindible para el Templo de las Sombras",
+    "summary": "Una mazmorra opcional para el viaje pero obligatoria para avanzar: era el lugar de tortura de la aldea. Muchas paredes y suelos son ilusiones que solo se ven con la Lente de la Verdad.",
+    "tip": "Hay que entrar de niño: el pozo solo se vacía tocando la Canción de la tormenta en el molino."
+  },
+  {
+    "id": "caverna-hielo",
+    "name": "la Caverna de hielo",
+    "aliases": [
+      "caverna de hielo",
+      "cueva de hielo",
+      "ice cavern",
+      "caverna helada"
+    ],
+    "order": 8,
+    "age": "adulto",
+    "where": "en la Fuente Zora congelada",
+    "treasure": "las Botas de hierro",
+    "miniboss": "Wolfos blanco",
+    "boss": "",
+    "reward": "las Botas de hierro y, al salir, la Serenata del agua que enseña Sheik",
+    "summary": "Una cueva helada que aparece cuando Ganondorf congela el Dominio Zora. Hay que derretir el hielo rojo con Fuego azul que se guarda en botellas.",
+    "tip": "Guarda Fuego azul en una botella: sirve para descongelar al Rey Zora."
+  },
+  {
+    "id": "templo-sombras",
+    "name": "el Templo de las Sombras",
+    "aliases": [
+      "templo de las sombras",
+      "templo de la sombra",
+      "shadow temple",
+      "templo sombras"
+    ],
+    "order": 9,
+    "age": "adulto",
+    "where": "bajo el cementerio de la Aldea Kakariko",
+    "treasure": "las Botas levitadoras",
+    "miniboss": "Mano Muerta (Dead Hand)",
+    "boss": "bongo-bongo",
+    "reward": "el Medallón de las Sombras, que entrega Impa (Sabia de las Sombras)",
+    "summary": "El lugar más oscuro de Hyrule, construido por los Sheikah para ocultar la historia sangrienta del reino. Guillotinas, caminos invisibles y un barco fantasma. Sin la Lente de la Verdad es casi imposible.",
+    "tip": "Se llega con el Nocturno de la sombra y hace falta Fuego de Din para encender las antorchas de la entrada."
+  },
+  {
+    "id": "templo-espiritu",
+    "name": "el Templo del Espíritu",
+    "aliases": [
+      "templo del espiritu",
+      "spirit temple",
+      "templo espiritu"
+    ],
+    "order": 10,
+    "age": "niño y adulto",
+    "where": "en el Coloso del Desierto, tras el Desierto Encantado",
+    "treasure": "los Guantes de plata (de niño) y el Escudo espejo (de adulto)",
+    "miniboss": "Nudillos de Hierro (uno de ellos es Nabooru hechizada)",
+    "boss": "birova",
+    "reward": "el Medallón del Espíritu, que entrega Nabooru (Sabia del Espíritu)",
+    "summary": "El único templo que se recorre con las dos edades: Link niño entra por un pasadizo estrecho y Link adulto por la entrada principal. Usa la luz del sol y el Escudo espejo para activar interruptores.",
+    "tip": "Para volver de niño necesitas el Réquiem del espíritu, que te lleva directamente al Coloso."
+  },
+  {
+    "id": "campo-entrenamiento-gerudo",
+    "name": "el Campo de entrenamiento Gerudo",
+    "aliases": [
+      "campo de entrenamiento gerudo",
+      "entrenamiento gerudo",
+      "gerudo training ground"
+    ],
+    "order": 11,
+    "age": "adulto",
+    "where": "en la Fortaleza Gerudo",
+    "treasure": "las Flechas de hielo",
+    "miniboss": "",
+    "boss": "",
+    "reward": "las Flechas de hielo",
+    "summary": "Una mazmorra opcional de pruebas de habilidad para las guerreras Gerudo. Solo puedes entrar con el pase de miembro que consigues al rescatar a los carpinteros.",
+    "tip": "Hay rupias plateadas en muchas salas: recoger todas abre la puerta."
+  },
+  {
+    "id": "castillo-ganon",
+    "name": "el Castillo de Ganon",
+    "aliases": [
+      "castillo de ganon",
+      "castillo ganon",
+      "ganon's castle",
+      "torre de ganon"
+    ],
+    "order": 12,
+    "age": "adulto",
+    "where": "sobre las ruinas del Castillo de Hyrule",
+    "treasure": "los Guantes dorados",
+    "miniboss": "",
+    "boss": "ganondorf",
+    "reward": "el final del juego",
+    "summary": "La fortaleza final. El puente arcoíris lo crean los seis sabios; dentro, seis barreras (una por templo) protegen la torre de Ganondorf. Tras vencerle, el castillo se derrumba y llega la batalla contra Ganon.",
+    "tip": "Necesitas las Flechas de luz, que Zelda te da en el Templo del Tiempo tras despertar a los seis sabios."
+  }
+]

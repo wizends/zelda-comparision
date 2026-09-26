@@ -89,6 +89,7 @@ class MusicEngine {
   master!: GainNode;
   busR!: GainNode;
   busN!: GainNode;
+  fx!: GainNode;
   noise!: AudioBuffer;
   pulse!: PeriodicWave;
   voices = new Map<string, Voice>();
@@ -122,6 +123,11 @@ class MusicEngine {
     // Capa N64: seca, algo más brillante
     this.busN = ctx.createGain();
     this.busN.connect(this.master);
+
+    // Efectos (arpegio del final): con reverb y sin depender de la mezcla remake/N64
+    this.fx = ctx.createGain();
+    this.fx.connect(this.master);
+    this.fx.connect(reverb);
 
     this.noise = this.whiteNoise();
     this.pulse = this.pulseWave(0.25);
@@ -200,6 +206,17 @@ class MusicEngine {
         v.index = (v.index + 1) % v.steps;
       }
     }
+  }
+
+  /**
+   * Arpegio original que acompaña a la Trifuerza en la cabecera (no es el sonido del juego):
+   * subida al aparecer y una nota al desaparecer. Coincide con la animación CSS (.topbar.finale).
+   */
+  chime() {
+    if (!this.started) return;
+    const t0 = this.ctx.currentTime;
+    [74, 78, 81, 86].forEach((n, i) => this.bell(this.fx, hz(n), t0 + 0.1 + i * 0.08, 0.5)); // Re mayor, subiendo
+    this.bell(this.fx, hz(98), t0 + 1.45, 0.6);
   }
 
   // ---------- Instrumentos ----------
@@ -457,6 +474,11 @@ export function initMusic() {
     switchTimer = window.setTimeout(apply, SWITCH_DELAY);
   };
   window.addEventListener('scroll', sync, { passive: true });
+
+  // Arpegio del final de la cabecera (solo si la música está activada)
+  window.addEventListener('oot:finale', () => {
+    if (on && !document.hidden) engine.chime();
+  });
   sync();
 
   // Mezcla remake/N64 según la posición horizontal del ratón (solo temas generados, solo escritorio)

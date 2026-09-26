@@ -1,0 +1,675 @@
+{
+  "_comment": "Intenciones de Navi. 'answers' son respuestas fijas (se elige una al azar). Las intenciones 'tema.*' se responden en brain.ts con knowledge/*.json; @tema marca el lugar de una mazmorra, jefe, canción, objeto, personaje, lugar o enemigo. Valida con npm run test:navi.",
+  "intents": [
+    {
+      "intent": "saludo",
+      "utterances": [
+        "hola",
+        "holaa",
+        "buenas",
+        "buenos días",
+        "buenas tardes",
+        "buenas noches",
+        "hey",
+        "hola qué tal",
+        "qué tal",
+        "cómo estás",
+        "saludos",
+        "hello",
+        "hi",
+        "hola navi",
+        "qué onda",
+        "holi",
+        "wena"
+      ],
+      "answers": [
+        "¡Hey! ¡Escucha! Soy Navi, el hada de Link. Pregúntame lo que quieras de Ocarina of Time: mazmorras, jefes, canciones, objetos o personajes.",
+        "¡Hola! Soy Navi. Llevo toda la aventura al lado de Link, así que sé un montón de Ocarina of Time. ¿Qué quieres saber?",
+        "¡Hey! ¿Te has perdido en Hyrule? Pregúntame por cualquier templo, jefe, canción u objeto."
+      ],
+      "suggestions": [
+        "¿Cuál es el orden de las mazmorras?",
+        "¿Cómo derroto a Volvagia?",
+        "¿Dónde consigo el Gancho?"
+      ]
+    },
+    {
+      "intent": "despedida",
+      "utterances": [
+        "adiós",
+        "chao",
+        "chau",
+        "hasta luego",
+        "nos vemos",
+        "bye",
+        "me voy",
+        "hasta pronto",
+        "eso es todo",
+        "nada más",
+        "que estés bien"
+      ],
+      "answers": [
+        "¡Hasta pronto! Recuerda guardar la partida antes de entrar en el Templo del Agua…",
+        "¡Adiós! Que las diosas te protejan en tu viaje por Hyrule.",
+        "¡Nos vemos! Si te pierdes, ya sabes: ¡Hey! ¡Escucha!"
+      ]
+    },
+    {
+      "intent": "agradecimiento",
+      "utterances": [
+        "gracias",
+        "muchas gracias",
+        "mil gracias",
+        "te lo agradezco",
+        "genial gracias",
+        "perfecto gracias",
+        "vale gracias",
+        "thanks",
+        "buenísimo",
+        "excelente"
+      ],
+      "answers": [
+        "¡De nada! Para eso estoy, aunque Link casi nunca me hace caso.",
+        "¡Un placer! ¿Quieres saber algo más de Hyrule?",
+        "¡Encantada de ayudar! Pregúntame lo que quieras."
+      ],
+      "suggestions": [
+        "¿De qué trata la historia?",
+        "¿Qué canciones hay?",
+        "¿Cuántas piezas de corazón hay?"
+      ]
+    },
+    {
+      "intent": "navi.identidad",
+      "utterances": [
+        "quién eres",
+        "quién eres tú",
+        "cómo te llamas",
+        "qué eres",
+        "eres navi",
+        "eres un hada",
+        "eres un bot",
+        "eres una ia",
+        "eres real",
+        "de dónde eres",
+        "quién te creó",
+        "preséntate"
+      ],
+      "answers": [
+        "Soy Navi, el hada que el Gran Árbol Deku mandó para acompañar a Link. En esta web soy un asistente: un clasificador de lenguaje (NLP.js) entrenado con el conocimiento de Zelda Wiki sobre Ocarina of Time. No me invento nada: respondo con lo que sé del juego."
+      ],
+      "suggestions": [
+        "¿Qué sabes hacer?",
+        "¿De qué trata la historia?"
+      ]
+    },
+    {
+      "intent": "navi.capacidades",
+      "utterances": [
+        "qué sabes",
+        "qué sabes hacer",
+        "qué puedo preguntarte",
+        "en qué me ayudas",
+        "ayuda",
+        "ayúdame",
+        "qué me puedes decir",
+        "de qué sabes",
+        "qué temas conoces",
+        "cómo funcionas",
+        "menú",
+        "opciones"
+      ],
+      "answers": [
+        "Puedo contarte sobre:\n• Mazmorras: dónde están, su jefe, su tesoro y su recompensa.\n• Jefes y enemigos: cómo derrotarlos.\n• Canciones: quién las enseña y para qué sirven.\n• Objetos: dónde conseguirlos y para qué sirven.\n• Personajes, lugares, la historia, las máscaras, las piezas de corazón y el remake de Switch 2.\n\nPrueba con «¿Cómo derroto a Morpha?» o «¿Dónde aprendo la Canción de la tormenta?»."
+      ],
+      "suggestions": [
+        "¿Cuál es el orden de las mazmorras?",
+        "¿Qué canciones hay?",
+        "¿Cómo derroto a Morpha?"
+      ]
+    },
+    {
+      "intent": "navi.hey",
+      "utterances": [
+        "hey listen",
+        "hey escucha",
+        "escucha",
+        "listen",
+        "oye",
+        "oye navi",
+        "hey navi",
+        "watch out",
+        "cuidado"
+      ],
+      "answers": [
+        "¡Hey! ¡Escucha! ¡Hey! … Perdona, es la costumbre. ¿En qué te ayudo?",
+        "¡Hey! ¡Escucha! Ya sé, ya sé, lo digo mucho. ¿Qué necesitas?"
+      ]
+    },
+    {
+      "intent": "juego.info",
+      "utterances": [
+        "qué es ocarina of time",
+        "de qué trata el juego",
+        "háblame del juego",
+        "qué es este juego",
+        "cuándo salió ocarina of time",
+        "en qué año salió",
+        "fecha de lanzamiento",
+        "para qué consola salió",
+        "en qué consola salió el original",
+        "es un buen juego",
+        "por qué es tan famoso",
+        "qué tiene de especial ocarina of time"
+      ],
+      "answers": [
+        "The Legend of Zelda: Ocarina of Time salió para Nintendo 64 el 21 de noviembre de 1998 en Japón (23 de noviembre en Norteamérica y 11 de diciembre en Europa). Fue el primer Zelda en 3D e inventó cosas que hoy son estándar, como la fijación de objetivos con Z y las acciones de contexto. Suele aparecer entre los mejores videojuegos de la historia."
+      ],
+      "suggestions": [
+        "¿Quién lo creó?",
+        "¿Qué versiones hay?",
+        "¿Qué trae el remake?"
+      ]
+    },
+    {
+      "intent": "juego.desarrollo",
+      "utterances": [
+        "quién creó ocarina of time",
+        "quién hizo el juego",
+        "quién lo desarrolló",
+        "quién es el director",
+        "quién compuso la música",
+        "quién hizo la música",
+        "compositor",
+        "miyamoto",
+        "koji kondo",
+        "aonuma",
+        "qué estudio lo hizo",
+        "quién lo produjo"
+      ],
+      "answers": [
+        "Lo desarrolló Nintendo EAD, con Shigeru Miyamoto como productor y varios directores, entre ellos Eiji Aonuma, Yoshiaki Koizumi y Toru Osawa. La música es de Koji Kondo, que compuso temas tan míticos como el del Campo de Hyrule, el Valle Gerudo o la Canción de Saria."
+      ],
+      "suggestions": [
+        "¿Qué versiones hay?",
+        "¿Qué trae el remake?"
+      ]
+    },
+    {
+      "intent": "juego.remake",
+      "utterances": [
+        "qué trae el remake",
+        "remake de switch 2",
+        "cuándo sale el remake",
+        "fecha del remake",
+        "qué cambia en el remake",
+        "hay remake de ocarina of time",
+        "versión de switch 2",
+        "novedades del remake",
+        "el nuevo ocarina of time",
+        "ocarina of time switch 2",
+        "remake"
+      ],
+      "answers": [
+        "Nintendo anunció un remake de Ocarina of Time para Nintendo Switch 2, con salida prevista para noviembre de 2026. Rehace el juego con modelos, escenarios e iluminación completamente nuevos; puedes compararlo escena a escena con el de Nintendo 64 en esta misma web. En el Direct del 40.º aniversario (8 de septiembre de 2026) también se anunció una ocarina física compatible con el juego."
+      ],
+      "suggestions": [
+        "¿Qué es esta web?",
+        "¿Qué versiones hay?"
+      ]
+    },
+    {
+      "intent": "juego.versiones",
+      "utterances": [
+        "qué versiones hay",
+        "en qué consolas está",
+        "hay versión de 3ds",
+        "qué es master quest",
+        "master quest",
+        "ocarina of time 3d",
+        "dónde puedo jugarlo",
+        "está en switch",
+        "está en nintendo switch online",
+        "reediciones"
+      ],
+      "answers": [
+        "Además del original de Nintendo 64 (1998) hay:\n• Master Quest (GameCube, 2002): las mismas mazmorras remezcladas y más difíciles.\n• Ocarina of Time 3D (Nintendo 3DS, 2011), de Grezzo, con gráficos mejorados.\n• Reediciones en Consola Virtual y en Nintendo Switch Online + Paquete de expansión.\n• El remake para Nintendo Switch 2 (noviembre de 2026)."
+      ],
+      "suggestions": [
+        "¿Qué trae el remake?",
+        "¿Qué es esta web?"
+      ]
+    },
+    {
+      "intent": "historia.resumen",
+      "utterances": [
+        "de qué trata la historia",
+        "cuál es la historia",
+        "cuéntame la historia",
+        "resumen de la historia",
+        "argumento",
+        "trama",
+        "qué pasa en el juego",
+        "de qué va",
+        "cuál es el objetivo del juego",
+        "cómo empieza la historia",
+        "cómo termina el juego",
+        "cuál es el final",
+        "qué pasa al final"
+      ],
+      "answers": [
+        "Link es un niño del Bosque Kokiri sin hada, hasta que el Gran Árbol Deku me envía a buscarlo. Ganondorf, rey de las Gerudo, quiere la Trifuerza del Reino Sagrado. Link reúne las tres Piedras Espirituales y abre la Puerta del Tiempo… pero al sacar la Espada Maestra queda sellado siete años y Ganondorf aprovecha para robar la Trifuerza.\n\nDe adulto, Link despierta a los seis sabios en los templos con la ayuda de Sheik (que resulta ser Zelda) y derrota a Ganondorf y a Ganon. Al final, Zelda devuelve a Link a su infancia."
+      ],
+      "suggestions": [
+        "¿Cómo funciona el viaje en el tiempo?",
+        "¿Quiénes son los sabios?",
+        "¿Qué es la Trifuerza?"
+      ]
+    },
+    {
+      "intent": "historia.viaje",
+      "utterances": [
+        "cómo funciona el viaje en el tiempo",
+        "cómo viajo en el tiempo",
+        "cómo me hago adulto",
+        "cómo vuelvo a ser niño",
+        "cómo cambio de edad",
+        "viajar al pasado",
+        "viajar al futuro",
+        "por qué link se hace adulto",
+        "siete años después",
+        "link niño y link adulto"
+      ],
+      "answers": [
+        "Para viajar en el tiempo usas la Espada Maestra en el Templo del Tiempo: al sacarla de su pedestal pasas a ser adulto (siete años después) y al devolverla vuelves a ser niño. El Preludio de la luz te lleva directo al templo. Algunos objetos solo los puede usar cada edad: el Tirachinas y el Bumerán son de niño, y el Arco, el Gancho y el Martillo, de adulto."
+      ],
+      "suggestions": [
+        "¿Dónde está la Espada Maestra?",
+        "¿Para qué sirve el Preludio de la luz?"
+      ]
+    },
+    {
+      "intent": "mazmorras.lista",
+      "utterances": [
+        "cuál es el orden de las mazmorras",
+        "qué mazmorras hay",
+        "cuántas mazmorras tiene",
+        "lista de templos",
+        "cuántos templos hay",
+        "orden de los templos",
+        "qué templo va primero",
+        "cuál es la siguiente mazmorra",
+        "qué mazmorra sigue",
+        "todas las mazmorras",
+        "cuál es el último templo"
+      ],
+      "answers": [
+        "El orden habitual es:\nDe niño: 1. Árbol Deku, 2. Caverna de los Dodongos, 3. Tripa de Jabu-Jabu.\nDe adulto: 4. Templo del Bosque, 5. Templo del Fuego, 6. Templo del Agua, 7. Fondo del pozo (de niño), 8. Templo de las Sombras, 9. Templo del Espíritu (niño y adulto) y, por último, el Castillo de Ganon.\nTambién están la Caverna de hielo y el Campo de entrenamiento Gerudo."
+      ],
+      "suggestions": [
+        "¿Quién es el jefe del Templo del Agua?",
+        "¿Dónde está el Templo de las Sombras?",
+        "¿Qué objeto hay en el Templo del Fuego?"
+      ]
+    },
+    {
+      "intent": "canciones.lista",
+      "utterances": [
+        "qué canciones hay",
+        "cuántas canciones hay",
+        "lista de canciones",
+        "qué canciones puedo tocar",
+        "canciones de la ocarina",
+        "todas las canciones",
+        "canciones de teletransporte",
+        "qué canciones enseña sheik",
+        "cómo me teletransporto"
+      ],
+      "answers": [
+        "Hay 12 canciones principales en la ocarina:\n• De niño: Nana de Zelda, Canción de Epona, Canción de Saria, Canción del Sol, Canción del Tiempo y Canción de la tormenta.\n• De teletransporte (te las enseña Sheik): Minueto del bosque, Bolero del fuego, Serenata del agua, Nocturno de la sombra, Réquiem del espíritu y Preludio de la luz.\nY además está la Canción del espantapájaros, que compones tú."
+      ],
+      "suggestions": [
+        "¿Para qué sirve la Canción del Sol?",
+        "¿Dónde aprendo el Nocturno de la sombra?",
+        "¿Quién enseña la Canción de Epona?"
+      ]
+    },
+    {
+      "intent": "mascaras.lista",
+      "utterances": [
+        "qué máscaras hay",
+        "cómo consigo las máscaras",
+        "tienda de máscaras",
+        "intercambio de máscaras",
+        "a quién le vendo las máscaras",
+        "cuántas máscaras hay",
+        "máscaras"
+      ],
+      "answers": [
+        "Las máscaras se consiguen en la Tienda de máscaras de la Ciudadela y se venden en este orden:\n1. Máscara Keaton → guardia de la Montaña de la Muerte (Kakariko).\n2. Máscara de calavera → Skull Kid del Bosque Perdido.\n3. Máscara espeluznante → niño del cementerio.\n4. Capucha de conejo → Hombre que corre.\nDespués el vendedor te regala la Máscara de la verdad y te presta las máscaras Goron, Zora y Gerudo."
+      ],
+      "suggestions": [
+        "¿Para qué sirve la Máscara de la verdad?",
+        "¿Dónde está la Tienda de máscaras?"
+      ]
+    },
+    {
+      "intent": "corazones",
+      "utterances": [
+        "cuántos corazones hay",
+        "cuántas piezas de corazón hay",
+        "cuál es el máximo de corazones",
+        "cuántos corazones puedo tener",
+        "cómo consigo más corazones",
+        "más vida",
+        "cómo aumento mi vida"
+      ],
+      "answers": [
+        "Empiezas con 3 corazones y puedes llegar a 20: hay 8 contenedores de corazón (uno por jefe de mazmorra) y 36 piezas de corazón, que forman 9 corazones más. Además, la Gran Hada del Castillo de Ganon duplica tu defensa."
+      ],
+      "suggestions": [
+        "¿Dónde hay piezas de corazón?",
+        "¿Qué dan las Skulltulas doradas?"
+      ]
+    },
+    {
+      "intent": "web.info",
+      "utterances": [
+        "qué es esta web",
+        "de qué trata esta página",
+        "quién hizo esta web",
+        "quién hizo esta página",
+        "para qué sirve esta web",
+        "qué es esta comparativa",
+        "quién es ricardo",
+        "quién es ricardo pérez",
+        "cómo se hizo esta web",
+        "de dónde salen las imágenes"
+      ],
+      "answers": [
+        "Esta web compara, escena a escena, el remake de Ocarina of Time para Nintendo Switch 2 con el original de Nintendo 64: la mitad izquierda tiene el estilo del remake y la derecha el de la N64. La hizo Ricardo Pérez, un proyecto de fan sin ánimo de lucro. Las capturas vienen de nintendo.com y de Zelda Wiki."
+      ],
+      "suggestions": [
+        "¿Qué trae el remake?",
+        "¿Dónde va Ocarina of Time en la cronología?"
+      ]
+    },
+    {
+      "intent": "cronologia",
+      "utterances": [
+        "dónde va en la cronología",
+        "cronología de zelda",
+        "línea temporal",
+        "timeline",
+        "en qué momento de la historia ocurre",
+        "qué juego va después",
+        "qué pasa después de ocarina of time",
+        "las tres líneas temporales",
+        "cronología oficial"
+      ],
+      "answers": [
+        "Ocarina of Time es el punto donde se divide la cronología oficial en tres ramas:\n• La caída del héroe (Link pierde): A Link to the Past y siguientes.\n• La era infantil (Link vuelve a su infancia): Majora's Mask y Twilight Princess.\n• La era adulta (Hyrule sin héroe): The Wind Waker.\nAntes van Skyward Sword, The Minish Cap y Four Swords. Tienes la cronología completa al final de esta web."
+      ],
+      "suggestions": [
+        "¿Qué es la Trifuerza?",
+        "¿De qué trata la historia?"
+      ]
+    },
+    {
+      "intent": "consejos",
+      "utterances": [
+        "dame un consejo",
+        "algún consejo",
+        "tips",
+        "trucos",
+        "estoy atascado",
+        "no sé qué hacer",
+        "me perdí",
+        "qué hago ahora",
+        "a dónde voy",
+        "no sé a dónde ir",
+        "estoy perdido"
+      ],
+      "answers": [
+        "Unos consejos de hada:\n• Pulsa Z para fijar enemigos: ¡así esquivas y aciertas mejor!\n• Habla con Saria con su canción si no sabes a dónde ir.\n• Guarda hadas en botellas: te reviven al perder todos los corazones.\n• De noche aparecen Skulltulas doradas y Stalchilds en el campo.\n• Si te atascas en una mazmorra, dime cuál y te doy una pista.",
+        "Si no sabes qué hacer, dime en qué mazmorra o lugar estás y te ayudo. También puedes preguntarme por el orden de las mazmorras."
+      ],
+      "suggestions": [
+        "¿Cuál es el orden de las mazmorras?",
+        "¿Algún consejo para el Templo del Agua?"
+      ]
+    },
+    {
+      "intent": "insulto",
+      "utterances": [
+        "eres tonta",
+        "eres inútil",
+        "no sirves para nada",
+        "cállate",
+        "eres pesada",
+        "eres molesta",
+        "qué pesada",
+        "eres mala",
+        "te odio",
+        "déjame en paz",
+        "no me ayudas"
+      ],
+      "answers": [
+        "¡Hey! Eso me ha dolido… pero un hada no se rinde. ¿En qué te ayudo?",
+        "Link también me ignoraba a veces, y mira cómo acabó: ¡salvando Hyrule! Pregúntame lo que necesites."
+      ],
+      "suggestions": [
+        "¿Qué sabes hacer?",
+        "¿Cuál es el orden de las mazmorras?"
+      ]
+    },
+    {
+      "intent": "fuera_de_tema",
+      "utterances": [
+        "qué tiempo hace",
+        "cuál es la capital de francia",
+        "cuánto es dos más dos",
+        "recomiéndame una película",
+        "quién ganó el mundial",
+        "qué hora es",
+        "hazme la tarea",
+        "escribe un poema",
+        "cuál es el mejor pokémon",
+        "háblame de mario",
+        "breath of the wild",
+        "tears of the kingdom",
+        "majora's mask"
+      ],
+      "answers": [
+        "Eso se sale de mi mundo… yo solo conozco Hyrule tal como era en Ocarina of Time. ¡Pregúntame por mazmorras, jefes, canciones u objetos!",
+        "Hmm, de eso no sé nada: soy un hada de Ocarina of Time. Pero pregúntame lo que quieras de ese juego."
+      ],
+      "suggestions": [
+        "¿Qué sabes hacer?",
+        "¿De qué trata la historia?"
+      ]
+    },
+    {
+      "intent": "tema.info",
+      "dynamic": true,
+      "utterances": [
+        "qué es @tema",
+        "quién es @tema",
+        "quiénes son @tema",
+        "háblame de @tema",
+        "cuéntame de @tema",
+        "cuéntame sobre @tema",
+        "información sobre @tema",
+        "qué sabes de @tema",
+        "qué sabes sobre @tema",
+        "@tema",
+        "qué es el @tema",
+        "qué es la @tema",
+        "quién es el @tema",
+        "quién es la @tema",
+        "hablame del @tema",
+        "explícame @tema",
+        "qué pasa con @tema",
+        "cuál es la historia de @tema",
+        "describe @tema",
+        "qué tal @tema",
+        "cuéntame más",
+        "dime más",
+        "más información",
+        "y qué más",
+        "cuántas @tema hay",
+        "cuántos @tema hay",
+        "qué hay en @tema"
+      ]
+    },
+    {
+      "intent": "tema.donde",
+      "dynamic": true,
+      "utterances": [
+        "dónde está @tema",
+        "dónde consigo @tema",
+        "dónde encuentro @tema",
+        "cómo consigo @tema",
+        "cómo llego a @tema",
+        "dónde aprendo @tema",
+        "quién enseña @tema",
+        "quién me enseña @tema",
+        "cómo aprendo @tema",
+        "dónde se consigue @tema",
+        "dónde vive @tema",
+        "dónde queda @tema",
+        "cómo obtengo @tema",
+        "dónde se aprende @tema",
+        "dónde lo consigo",
+        "dónde está",
+        "dónde se consigue",
+        "dónde la aprendo",
+        "dónde se aprende",
+        "quién la enseña",
+        "cómo llego",
+        "y dónde está",
+        "y dónde lo encuentro",
+        "dónde queda"
+      ]
+    },
+    {
+      "intent": "tema.jefe",
+      "dynamic": true,
+      "utterances": [
+        "quién es el jefe de @tema",
+        "qué jefe hay en @tema",
+        "cuál es el jefe de @tema",
+        "jefe de @tema",
+        "jefe final de @tema",
+        "contra quién peleo en @tema",
+        "qué monstruo hay en @tema",
+        "quién es el jefe",
+        "cuál es su jefe",
+        "y el jefe",
+        "qué jefe tiene",
+        "y su jefe"
+      ]
+    },
+    {
+      "intent": "tema.tesoro",
+      "dynamic": true,
+      "utterances": [
+        "qué objeto hay en @tema",
+        "qué consigo en @tema",
+        "qué tesoro hay en @tema",
+        "qué arma hay en @tema",
+        "qué objeto da @tema",
+        "qué item hay en @tema",
+        "qué se consigue en @tema",
+        "qué objeto hay",
+        "qué tesoro tiene",
+        "y qué objeto hay",
+        "qué consigo ahí",
+        "qué arma encuentro"
+      ]
+    },
+    {
+      "intent": "tema.recompensa",
+      "dynamic": true,
+      "utterances": [
+        "qué recompensa da @tema",
+        "qué medallón da @tema",
+        "qué piedra da @tema",
+        "qué me dan al terminar @tema",
+        "qué sabio hay en @tema",
+        "qué sabio despierta en @tema",
+        "recompensa de @tema",
+        "qué recompensa da",
+        "qué medallón da",
+        "y la recompensa",
+        "qué me dan al terminarla",
+        "qué sabio despierta"
+      ]
+    },
+    {
+      "intent": "tema.derrotar",
+      "dynamic": true,
+      "utterances": [
+        "cómo derroto a @tema",
+        "cómo mato a @tema",
+        "cómo venzo a @tema",
+        "cómo le gano a @tema",
+        "estrategia contra @tema",
+        "punto débil de @tema",
+        "cómo se derrota a @tema",
+        "cómo ataco a @tema",
+        "cuál es la debilidad de @tema",
+        "cómo acabo con @tema",
+        "cómo lo derroto",
+        "cómo lo mato",
+        "cómo la derroto",
+        "cómo se derrota",
+        "cuál es su punto débil",
+        "y cómo lo venzo",
+        "estrategia",
+        "cómo derroto al jefe",
+        "cómo le gano al jefe",
+        "cómo venzo al jefe",
+        "cómo se derrota al jefe",
+        "cómo mato al jefe"
+      ]
+    },
+    {
+      "intent": "tema.uso",
+      "dynamic": true,
+      "utterances": [
+        "para qué sirve @tema",
+        "qué hace @tema",
+        "cómo se usa @tema",
+        "cómo uso @tema",
+        "qué efecto tiene @tema",
+        "para qué es @tema",
+        "de qué sirve @tema",
+        "utilidad de @tema",
+        "para qué sirve",
+        "qué hace",
+        "cómo se usa",
+        "y para qué sirve",
+        "qué efecto tiene"
+      ]
+    },
+    {
+      "intent": "tema.consejo",
+      "dynamic": true,
+      "utterances": [
+        "algún consejo para @tema",
+        "me atasqué en @tema",
+        "estoy atascado en @tema",
+        "ayuda con @tema",
+        "no puedo pasar @tema",
+        "truco para @tema",
+        "pista para @tema",
+        "cómo paso @tema",
+        "cómo supero @tema",
+        "algún consejo",
+        "dame una pista",
+        "no puedo pasarlo"
+      ]
+    }
+  ]
+}

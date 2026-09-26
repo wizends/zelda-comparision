@@ -7,5 +7,18 @@
     <span class="tb-title">OCARINA OF TIME</span>
     <span class="tb-kicker">NINTENDO 64 · 1998</span>
   </a>
-  <span class="vs-badge" aria-hidden="true">VS</span>
+  <span class="vs-badge" aria-hidden="true">
+    <span class="vs-text">VS</span>
+    <!-- Final: la Trifuerza sustituye al VS, gira y desaparece mientras sale la mitad N64 -->
+    <svg class="vs-tri" viewBox="0 0 60 52">
+      <defs>
+        <linearGradient id="tri-gold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#fffbe9" />
+          <stop offset=".45" stop-color="#f3dca4" />
+          <stop offset="1" stop-color="#b8862e" />
+        </linearGradient>
+      </defs>
+      <path d="M30 0 45 26H15zM15 26 30 52H0zM45 26 60 52H30z" fill="url(#tri-gold)" stroke="#6b4a14" stroke-width="1" stroke-linejoin="round" />
+    </svg>
+  </span>
 </header>

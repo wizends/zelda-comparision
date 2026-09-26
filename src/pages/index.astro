@@ -7,6 +7,8 @@ import ChapterSection from '../components/ChapterSection.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import CompareModal from '../components/CompareModal.astro';
 import MusicToggle from '../components/MusicToggle.astro';
+import Timeline from '../components/Timeline.astro';
+import NaviChat from '../components/NaviChat.astro';
 import { CHAPTERS } from '../data/chapters';
 ---
 
@@ -19,8 +21,10 @@ import { CHAPTERS } from '../data/chapters';
   <ChapterNav />
   <main id="app">
     {CHAPTERS.map((chapter, index) => <ChapterSection chapter={chapter} index={index} />)}
+    <Timeline />
   </main>
   <SiteFooter />
   <CompareModal />
   <MusicToggle />
+  <NaviChat />
 </Layout>

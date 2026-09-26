@@ -1,0 +1,77 @@
+---
+// Cronología oficial en una sección a todo el ancho (sin dividir en remake / N64):
+// tronco común → tres ramas tras Ocarina of Time → convergencia en un futuro lejano.
+import { ORIGIN, BRANCHES, FAR_FUTURE, TIMELINE_SOURCES } from '../data/timeline';
+---
+
+<section class="timeline" id="cronologia">
+  <header class="tl-head tl-block">
+    <div class="reveal-l">
+      <span class="ch-num">EPÍLOGO</span>
+      <h2 class="ch-title">La cronología de Hyrule</h2>
+      <div class="ornament"><i></i></div>
+      <p class="tl-intro">
+        Ocarina of Time es el punto donde la historia se divide en tres. Así ordena Nintendo hoy toda la saga.
+      </p>
+    </div>
+  </header>
+
+  <div class="tree tl-block">
+    <div class="reveal-l">
+      <div class="tl-era tl-origin">
+        <h3 class="tl-title">{ORIGIN.title}</h3>
+        <p class="tl-note">{ORIGIN.note}</p>
+        <ol class="tl-games">
+          {ORIGIN.games.map((g) => (
+            <li class:list={['tl-game', { current: g.current }]}>
+              {g.current && <span class="tl-here">Estás aquí</span>}
+              <span class="tl-name">{g.title}</span>
+              <span class="tl-meta">{g.current ? '1998 · N64 — 2026 · Switch 2' : `${g.year} · ${g.platform}`}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="tl-branches">
+        {BRANCHES.map((era, i) => (
+          <div class={`tl-era tl-branch branch-${i + 1}`}>
+            <span class="tl-kicker">Rama {i + 1}</span>
+            <h3 class="tl-title">{era.title}</h3>
+            <p class="tl-note">{era.note}</p>
+            <ol class="tl-games">
+              {era.games.map((g) => (
+                <li class="tl-game">
+                  <span class="tl-name">{g.title}</span>
+                  <span class="tl-meta">{g.year} · {g.platform}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
+
+      <div class="tl-era tl-end">
+        <h3 class="tl-title">{FAR_FUTURE.title}</h3>
+        <p class="tl-note">{FAR_FUTURE.note}</p>
+        <ol class="tl-games">
+          {FAR_FUTURE.games.map((g) => (
+            <li class="tl-game">
+              <span class="tl-name">{g.title}</span>
+              <span class="tl-meta">{g.year} · {g.platform}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <p class="tl-sources">
+    Cronología oficial de Nintendo (Hyrule Historia, Encyclopedia y actualización de 2024). Fuentes:
+    {TIMELINE_SOURCES.map((s, i) => (
+      <>
+        {i > 0 && ' · '}
+        <a href={s.url} target="_blank" rel="noopener">{s.label}</a>
+      </>
+    ))}
+  </p>
+</section>
