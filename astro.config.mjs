@@ -32,6 +32,10 @@ export default defineConfig({
   site: SITE,
   output: 'static',
   integrations: [sitemap({ filter: (page) => !page.includes('/api/') && !page.includes('/404') })],
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   vite: { plugins: [trainNavi()] },
 });
