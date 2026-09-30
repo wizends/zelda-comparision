@@ -1,13 +1,16 @@
 ---
 import '../styles/global.css';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import Seo from '../components/Seo.astro';
+import { SEO_DESCRIPTION, SEO_TITLE } from '../data/seo';
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title = SEO_TITLE, description = SEO_DESCRIPTION, noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,12 +18,8 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content="/img/hero-remake.webp" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <Seo title={title} description={description} noindex={noindex} />
+    <link rel="preload" as="image" href="/img/hero-remake.webp" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

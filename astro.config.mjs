@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import vercel from '@astrojs/vercel';
+import sitemap from '@astrojs/sitemap';
 
 /**
  * Entrena el chatbot Navi en cada `astro build` (local o en Vercel) y deja el modelo en
@@ -23,9 +24,14 @@ function trainNavi() {
   };
 }
 
+/** URL pública (canonical, sitemap, Open Graph). Se puede cambiar con la variable SITE_URL. */
+const SITE = process.env.SITE_URL || 'https://zelda-comparativa.wizends.dev';
+
 // La web es estática; solo /api/navi (prerender = false) se sirve como función en Vercel.
 export default defineConfig({
+  site: SITE,
   output: 'static',
+  integrations: [sitemap({ filter: (page) => !page.includes('/api/') && !page.includes('/404') })],
   adapter: vercel(),
   vite: { plugins: [trainNavi()] },
 });

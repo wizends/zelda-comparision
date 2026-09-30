@@ -1,0 +1,133 @@
+---
+// SEO de la web: metaetiquetas, Open Graph, Twitter y datos estructurados (JSON-LD).
+import { CHAPTERS } from '../data/chapters';
+import { KEYWORDS } from '../data/seo';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Ruta de la imagen para compartir (1200×630) */
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  image = '/og-image.jpg',
+  imageAlt = 'Zelda: Ocarina of Time, remake de Nintendo Switch 2 frente al original de Nintendo 64',
+  noindex = false,
+} = Astro.props;
+
+const site = Astro.site ?? new URL(Astro.url.origin);
+const canonical = new URL(Astro.url.pathname, site).href;
+const imageUrl = new URL(image, site).href;
+const home = new URL('/', site).href;
+
+const author = { '@type': 'Person', name: 'Ricardo Pérez' };
+const nintendo = { '@type': 'Organization', name: 'Nintendo', url: 'https://www.nintendo.com' };
+const original = {
+  '@type': 'VideoGame',
+  '@id': `${home}#oot-n64`,
+  name: 'The Legend of Zelda: Ocarina of Time',
+  alternateName: ['Zelda OoT', 'OoT', 'Ocarina of Time'],
+  gamePlatform: 'Nintendo 64',
+  datePublished: '1998-11-21',
+  genre: ['Acción', 'Aventura'],
+  publisher: nintendo,
+  author: { '@type': 'Organization', name: 'Nintendo EAD' },
+  musicBy: { '@type': 'Person', name: 'Koji Kondo' },
+};
+const remake = {
+  '@type': 'VideoGame',
+  '@id': `${home}#oot-switch2`,
+  name: 'The Legend of Zelda: Ocarina of Time (Nintendo Switch 2)',
+  alternateName: ['Zelda Ocarina of Time remake', 'Ocarina of Time Switch 2'],
+  gamePlatform: 'Nintendo Switch 2',
+  genre: ['Acción', 'Aventura'],
+  publisher: nintendo,
+  isBasedOn: { '@id': `${home}#oot-n64` },
+};
+
+const jsonLd = noindex
+  ? null
+  : {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          '@id': `${home}#website`,
+          url: home,
+          name: 'Zelda Ocarina of Time · Remake vs N64',
+          alternateName: 'Zelda comparativa: Ocarina of Time',
+          description,
+          inLanguage: 'es',
+          author,
+          keywords: KEYWORDS.join(', '),
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${canonical}#webpage`,
+          url: canonical,
+          name: title,
+          description,
+          inLanguage: 'es',
+          isPartOf: { '@id': `${home}#website` },
+          primaryImageOfPage: { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 630 },
+          about: [{ '@id': `${home}#oot-n64` }, { '@id': `${home}#oot-switch2` }],
+          author,
+          dateModified: new Date().toISOString().slice(0, 10),
+          keywords: KEYWORDS.join(', '),
+          hasPart: {
+            '@type': 'ItemList',
+            name: 'Comparativa de Zelda Ocarina of Time por capítulos',
+            itemListElement: [
+              ...CHAPTERS.map((ch, i) => ({ '@type': 'ListItem', position: i + 1, name: ch.title, url: `${home}#${ch.id}` })),
+              { '@type': 'ListItem', position: CHAPTERS.length + 1, name: 'La cronología de Hyrule', url: `${home}#cronologia` },
+            ],
+          },
+        },
+        original,
+        remake,
+      ],
+    };
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+<meta name="keywords" content={KEYWORDS.join(', ')} />
+<meta name="author" content="Ricardo Pérez" />
+<meta name="theme-color" content="#0c0906" />
+<meta name="color-scheme" content="dark" />
+
+<!-- Iconos y manifiesto -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn, Discord…) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Zelda Ocarina of Time · Remake vs N64" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={imageAlt} />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<meta name="twitter:image:alt" content={imageAlt} />
+
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}

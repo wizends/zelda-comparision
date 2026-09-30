@@ -1,0 +1,310 @@
+{
+"burning-n64": [
+800,
+440
+],
+"burning-remake": [
+1600,
+900
+],
+"colossus-n64": [
+1280,
+652
+],
+"colossus-remake": [
+1600,
+900
+],
+"courtyard-n64": [
+800,
+440
+],
+"courtyard-remake": [
+671,
+362
+],
+"courtyard2-n64": [
+1000,
+299
+],
+"courtyard2-remake": [
+1600,
+900
+],
+"death-mountain-n64": [
+800,
+364
+],
+"death-mountain-remake": [
+1600,
+900
+],
+"deku-inside-n64": [
+1280,
+469
+],
+"deku-inside-remake": [
+1600,
+900
+],
+"deku-meadow-n64": [
+1280,
+535
+],
+"deku-meadow-remake": [
+1600,
+900
+],
+"dm-trail-n64": [
+1280,
+800
+],
+"dm-trail-remake": [
+1600,
+900
+],
+"dodongo-n64": [
+1280,
+587
+],
+"dodongo-remake": [
+1600,
+900
+],
+"epona-n64": [
+1280,
+800
+],
+"epona-remake": [
+1600,
+900
+],
+"fishing-n64": [
+1280,
+800
+],
+"fishing-remake": [
+1600,
+900
+],
+"forest-temple-n64": [
+624,
+680
+],
+"forest-temple-remake": [
+1600,
+900
+],
+"gerudo-n64": [
+1280,
+704
+],
+"gerudo-remake": [
+1600,
+900
+],
+"goddesses-n64": [
+933,
+662
+],
+"goddesses-remake": [
+1600,
+900
+],
+"goron-n64": [
+1280,
+800
+],
+"goron-remake": [
+1600,
+900
+],
+"hero-remake": [
+1600,
+1673
+],
+"hyrule-castle-n64": [
+1186,
+584
+],
+"hyrule-castle-remake": [
+597,
+251
+],
+"hyrule-field-n64": [
+1024,
+785
+],
+"hyrule-field-remake": [
+1600,
+900
+],
+"jabu-lord-n64": [
+610,
+345
+],
+"jabu-lord-remake": [
+558,
+354
+],
+"jabu-n64": [
+592,
+464
+],
+"jabu-remake": [
+1600,
+900
+],
+"kakariko-n64": [
+1024,
+706
+],
+"kakariko-remake": [
+1600,
+900
+],
+"king-dodongo-n64": [
+1280,
+720
+],
+"king-dodongo-remake": [
+1600,
+900
+],
+"kokiri-n64": [
+1280,
+584
+],
+"kokiri-remake": [
+1600,
+900
+],
+"lake-hylia-n64": [
+1024,
+800
+],
+"lake-hylia-remake": [
+1600,
+900
+],
+"link-remake": [
+900,
+1065
+],
+"links-house-n64": [
+1280,
+800
+],
+"links-house-remake": [
+1600,
+900
+],
+"logo-remake": [
+1000,
+799
+],
+"lon-lon-n64": [
+1280,
+785
+],
+"lon-lon-remake": [
+1600,
+900
+],
+"lost-woods-n64": [
+620,
+358
+],
+"lost-woods-remake": [
+1600,
+900
+],
+"market-n64": [
+1280,
+364
+],
+"market-remake": [
+1600,
+900
+],
+"master-sword-n64": [
+1280,
+701
+],
+"master-sword-remake": [
+1600,
+900
+],
+"ocarina-remake": [
+460,
+352
+],
+"sacred-meadow-n64": [
+1280,
+785
+],
+"sacred-meadow-remake": [
+1600,
+900
+],
+"sacred-realm-n64": [
+1280,
+535
+],
+"sacred-realm-remake": [
+1600,
+900
+],
+"saria-n64": [
+1280,
+528
+],
+"saria-remake": [
+1250,
+704
+],
+"shadow-temple-n64": [
+1024,
+800
+],
+"shadow-temple-remake": [
+1600,
+1047
+],
+"title-n64": [
+320,
+237
+],
+"volley-n64": [
+919,
+770
+],
+"volley-remake": [
+1600,
+900
+],
+"water-temple-n64": [
+1024,
+706
+],
+"water-temple-remake": [
+1600,
+900
+],
+"zora-domain-n64": [
+1280,
+800
+],
+"zora-domain-remake": [
+1600,
+900
+],
+"zora-fountain-n64": [
+1280,
+800
+],
+"zora-fountain-remake": [
+1600,
+900
+]
+}

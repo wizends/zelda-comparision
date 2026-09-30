@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Página no encontrada | Zelda Ocarina of Time · Remake vs N64" description="Esta página no existe. Vuelve a la comparativa de Zelda Ocarina of Time." noindex>
+  <main class="not-found">
+    <p class="nf-code">404</p>
+    <h1 class="nf-title">¡Hey! ¡Escucha!</h1>
+    <p class="nf-text">Te has perdido en el Bosque Perdido: esta página no existe.</p>
+    <a class="nf-link" href="/">Volver a la comparativa de Zelda Ocarina of Time</a>
+  </main>
+</Layout>
+
+<style>
+  .not-found {
+    position: relative; z-index: 5; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 14px; padding: 24px 16px; text-align: center; background: var(--r-bg);
+  }
+  .nf-code { margin: 0; font-family: var(--pixel); font-size: clamp(48px, 12vw, 96px); color: var(--n-yellow); text-shadow: 4px 4px 0 var(--n-red), 8px 8px 0 #000; }
+  .nf-title { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(26px, 4vw, 40px); color: var(--r-gold-2); letter-spacing: .06em; }
+  .nf-text { margin: 0; font-size: 20px; font-style: italic; color: var(--r-muted); }
+  .nf-link { margin-top: 10px; padding: 10px 18px; font-family: var(--display); letter-spacing: .08em; color: var(--r-gold); text-decoration: none; border: 1px solid var(--r-gold); }
+  .nf-link:hover { background: var(--r-gold); color: var(--r-bg); }
+</style>

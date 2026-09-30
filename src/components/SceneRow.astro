@@ -1,18 +1,24 @@
 ---
 import { imgSrc, type Scene } from '../data/chapters';
+import sizes from '../data/imageSizes.json';
 
 interface Props {
   scene: Scene;
 }
 
 const { scene } = Astro.props;
+// Tamaño real de cada captura: evita saltos de maquetación (CLS) mientras cargan
+const size = (side: 'remake' | 'n64') => {
+  const [width, height] = (sizes as Record<string, number[]>)[`${scene.id}-${side}`] ?? [1600, 900];
+  return { width, height };
+};
 ---
 
 <article class="row split" tabindex="0" data-id={scene.id} data-name={scene.name} aria-label={`Comparar ${scene.name}`}>
   <div class="half half-l">
     <figure class="shot shot-l reveal-l">
       <div class="img-wrap">
-        <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'remake')} alt={`${scene.name} en el remake de Switch 2`} />
+        <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'remake')} {...size('remake')} alt={`${scene.name} en el remake de Zelda: Ocarina of Time para Nintendo Switch 2`} />
       </div>
       <figcaption>
         <h4 class="shot-name">{scene.name}</h4>
@@ -24,7 +30,7 @@ const { scene } = Astro.props;
     <figure class="shot shot-r reveal-r">
       <div class="shadowbox">
         <div class="img-wrap">
-          <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'n64')} alt={`${scene.name} en Nintendo 64`} />
+          <img loading="lazy" decoding="async" src={imgSrc(scene.id, 'n64')} {...size('n64')} alt={`${scene.name} en Zelda: Ocarina of Time de Nintendo 64 (1998)`} />
           <span class="crt"></span>
         </div>
       </div>

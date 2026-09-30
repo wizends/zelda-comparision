@@ -42,7 +42,7 @@ body {
   font-family: var(--serif);
   overflow-x: hidden;
 }
-img { display: block; max-width: 100%; }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 
 /* ---------- Estructura dividida ---------- */
@@ -185,7 +185,10 @@ a { color: inherit; }
 @keyframes slowzoom { to { transform: scale(1.08); } }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12, 9, 6, .2) 30%, rgba(12, 9, 6, .95)), radial-gradient(ellipse at 50% 40%, transparent 40%, rgba(0, 0, 0, .6)); }
 .hero-content { position: relative; max-width: 520px; margin: 0 auto; text-align: center; }
-.hero-logo { width: min(440px, 90%); margin: 0 auto -12px; filter: drop-shadow(0 8px 30px rgba(0, 0, 0, .6)); }
+.hero-h1 { margin: 0; font-size: inherit; line-height: 0; }
+.hero-logo { width: min(440px, 90%); height: auto; margin: 0 auto -12px; filter: drop-shadow(0 8px 30px rgba(0, 0, 0, .6)); }
+/* Texto solo para buscadores y lectores de pantalla */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hero-tag {
   font-family: var(--display); font-size: clamp(22px, 2.6vw, 34px); letter-spacing: .12em; margin: 0;
   background: linear-gradient(180deg, var(--r-gold-2), var(--r-gold) 60%, var(--r-bronze));

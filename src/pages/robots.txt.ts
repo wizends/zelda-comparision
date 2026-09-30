@@ -1,0 +1,9 @@
+import type { APIRoute } from 'astro';
+
+// robots.txt con la URL del sitemap según el dominio configurado (astro.config.mjs → site)
+export const GET: APIRoute = ({ site }) => {
+	const sitemap = new URL('sitemap-index.xml', site).href;
+	return new Response(`User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${sitemap}\n`, {
+		headers: { 'content-type': 'text/plain; charset=utf-8' },
+	});
+};
