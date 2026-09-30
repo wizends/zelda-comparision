@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   title: string;
@@ -39,6 +40,9 @@ const { title, description } = Astro.props;
     <div class="seam" aria-hidden="true"><span class="seam-tri"></span></div>
 
     <slot />
+
+    <!-- Métricas de rendimiento de Vercel (Speed Insights) -->
+    <SpeedInsights />
 
     <script>
       import '../scripts/main';
