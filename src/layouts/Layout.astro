@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
 import Seo from '../components/Seo.astro';
 import { SEO_DESCRIPTION, SEO_TITLE } from '../data/seo';
@@ -42,6 +43,8 @@ const { title = SEO_TITLE, description = SEO_DESCRIPTION, noindex = false } = As
 
     <!-- Métricas de rendimiento de Vercel (Speed Insights) -->
     <SpeedInsights />
+    <!-- Análisis de tráfico de Vercel (Web Analytics) -->
+    <Analytics />
 
     <script>
       import '../scripts/main';
